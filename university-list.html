@@ -5,20 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universe Group</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1641639942201">
+  <link rel="stylesheet" href="css/main.css?t=1641884143216">
 </head>
 
 <body>
-  
 <header class="header absolute top-0 left-0 right-0 z-50 mt-6">
   <div class="container mx-auto">
     <nav class="nav flex justify-between items-center ">
       <div class="logo">
         <a href="#">
-          <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[150px]" src="img/logo.png" alt="logo"></picture>
+          <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[140px]" src="img/logo.png" alt="logo"></picture>
         </a>
       </div>
 
@@ -78,13 +78,13 @@
 
       <div class="home-btns z-10 relative font-semibold text-xl mt-7 relative flex gap-x-[30px]">
   <a href="#" class="btn w-40">Позвонить</a>
-  <button class="btn w-40">Записаться</button>
+  <button class="btn w-40 modal-btn-open">Записаться</button>
 </div>
 
     </div>
   </section>
 
-  <section class="catalog relative top-[-70px] left-0 right-0 ">
+  <section class="catalog relative top-[-70px] left-0 right-0  z-50">
     <div class="container mx-auto bg-white rounded-[12px] px-12 py-10 box-shadow">
       <div class="catalog-inner">
         <p class="text-[#828594] text-base">
@@ -280,14 +280,37 @@
 
 <footer class="footer mt-12">
   <div class="container mx-auto">
-    <div class="footer-inner grid grid-cols-12">
-      <div class="footer-map col-span-8 gap-x-[65px] rounded-[20px] overflow-hidden">
-        <script type="text/javascript" charset="utf-8" async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afe5175b5a610cdf5ae0d653f0a7f66dd58c8cf8def1f69e7aae21caddf74c73e&amp;width=100%25&amp;height=585&amp;lang=ru_RU&amp;scroll=true">
-        </script>
+
+    <div class="footer-inner grid grid-cols-12 gap-x-12">
+      <div id="footer-map" class="footer-map col-span-8 gap-x-[65px] rounded-[20px] overflow-hidden">
+
+      </div>
+      <div class="footer-filial col-span-4">
+        <h3 class="text-black text-[24px] font-bold mb-4">
+          Филиалы
+        </h3>
+        <ul class="grid gap-y-2">
+          <li data-filial='#filial-1'
+            class="filial-item active cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+            Ташкент
+          </li>
+          <li data-filial='#filial-2' data-longitude="39.65417" data-latitude="66.95972"
+            class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+            Самарканд
+          </li>
+          <li data-filial='#filial-3'
+            class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+            Жиззах
+          </li>
+          <li data-filial='#filial-4'
+            class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+            Навоий
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8">
+
+    <div class="footer-contact active grid grid-cols-4 my-[70px] gap-x-8" id='filial-1'>
 
       <div class="mail flex items-start gap-x-5">
         <div class="bg-[#f4f4f4] p-5 rounded-full">
@@ -317,7 +340,7 @@
         </div>
         <div class="grid w-full">
           <span class="text-lg font-bold">Адрес :</span>
-          <span class="text-sm text-[##70798B]">г. Ташкент, улица Амира
+          <span class="text-sm text-[##70798B]">улица Амира
             Темура, дом 107Б,
             Международный Бизнес Центр</span>
         </div>
@@ -333,9 +356,10 @@
             <polyline points="12 7 12 12 15 15" />
           </svg>
         </div>
-        <div class="gridw-full">
+        <div class="grid w-full">
           <span class="text-lg font-bold">Часы работы :</span>
-          <span class="text-sm text-[##70798B]"> Пон-пят </span>
+          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
+          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
         </div>
       </div>
 
@@ -355,14 +379,233 @@
           <a class="text-sm text-[##70798B]" href="tel:">+99899 999 99 99</a>
         </div>
       </div>
-    </div>
-    <div class="">
 
     </div>
+
+    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8" id='filial-2'>
+
+      <div class="mail flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold mb-1">Почта :</span>
+          <a class="text-sm text-[##70798B]" href="mailto:info@universegroup.uz">info@universegroup.uz</a>
+        </div>
+      </div>
+
+      <div class="location  flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="11" r="3" />
+            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Адрес :</span>
+          <span class="text-sm text-[##70798B]">
+            Самарканд
+          </span>
+        </div>
+      </div>
+
+      <div class="working-hours flex items-start gap-x-5 ">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <polyline points="12 7 12 12 15 15" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Часы работы :</span>
+          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
+          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
+        </div>
+      </div>
+
+      <div class="contact flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Контакты :</span>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 888 88 88</a>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 888 88 88</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8" id='filial-4'>
+
+      <div class="mail flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold mb-1">Почта :</span>
+          <a class="text-sm text-[##70798B]" href="mailto:info@universegroup.uz">info@universegroup.uz</a>
+        </div>
+      </div>
+
+      <div class="location  flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="11" r="3" />
+            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Адрес :</span>
+          <span class="text-sm text-[##70798B]">
+            Навои
+          </span>
+        </div>
+      </div>
+
+      <div class="working-hours flex items-start gap-x-5 ">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <polyline points="12 7 12 12 15 15" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Часы работы :</span>
+          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
+          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
+        </div>
+      </div>
+
+      <div class="contact flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Контакты :</span>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 000 99 55</a>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 000 99 55</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8" id='filial-3'>
+
+      <div class="mail flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold mb-1">Почта :</span>
+          <a class="text-sm text-[##70798B]" href="mailto:info@universegroup.uz">info@universegroup.uz</a>
+        </div>
+      </div>
+
+      <div class="location  flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="11" r="3" />
+            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Адрес :</span>
+          <span class="text-sm text-[##70798B]">
+            Жиззах
+          </span>
+        </div>
+      </div>
+
+      <div class="working-hours flex items-start gap-x-5 ">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <polyline points="12 7 12 12 15 15" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Часы работы :</span>
+          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
+          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
+        </div>
+      </div>
+
+      <div class="contact flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Контакты :</span>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 777 77 77</a>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 777 77 77</a>
+        </div>
+      </div>
+
+    </div>
+
+
   </div>
 </footer>
 
-<script src="js/main.js?t=1641639942201"></script>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU" type="text/javascript"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/main.js?t=1641884143216"></script>
 
 </body>
 

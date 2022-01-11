@@ -5,20 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universe Group</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1641639942181">
+  <link rel="stylesheet" href="css/main.css?t=1641884143196">
 </head>
 
 <body>
-  
 <header class="header absolute top-0 left-0 right-0 z-50 mt-6">
   <div class="container mx-auto">
     <nav class="nav flex justify-between items-center ">
       <div class="logo">
         <a href="#">
-          <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[150px]" src="img/logo.png" alt="logo"></picture>
+          <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[140px]" src="img/logo.png" alt="logo"></picture>
         </a>
       </div>
 
@@ -78,13 +78,13 @@
 
       <div class="home-btns z-10 relative font-semibold text-xl mt-7 relative flex gap-x-[30px]">
   <a href="#" class="btn w-40">Позвонить</a>
-  <button class="btn w-40">Записаться</button>
+  <button class="btn w-40 modal-btn-open">Записаться</button>
 </div>
 
     </div>
   </section>
 
-  <section class="choose-us relative top-[-70px] left-0 right-0">
+  <section class="choose-us relative top-[-70px] left-0 right-0  z-50">
     <div class="container mx-auto">
       <div class="bg-white choose-us-inner box-shadow pt-[57px] pb-[78px] rounded-[12px]">
         <h2 class="title">
@@ -265,42 +265,94 @@
         Наши <span class="text-[#61AE00]"> студенты </span>
       </h2>
       <div class="row grid grid-cols-12 gap-x-7 mt-[33px]">
-        <div class="students-wrap grid grid-cols-12 gap-7 col-span-9">
-          <div class="students-item active col-span-4 ">
+
+        <div class="students-wrap col-span-9 grid grid-cols-12 gap-7 h-[588px] overflow-auto pr-2">
+          <div class="students-item active col-span-4 " data-student="#student-1">
             <picture>
               <img class="w-full h-full" src="img/student.png" alt="student">
             </picture>
           </div>
-          <div class="students-item col-span-4 ">
+          <div class="students-item col-span-4 " data-student="#student-2">
             <picture>
               <img class="w-full h-full" src="img/student-2.png" alt="student">
             </picture>
           </div>
-          <div class="students-item col-span-4 ">
+          <div class="students-item col-span-4 " data-student="#student-3">
             <picture>
               <img class="w-full h-full" src="img/student-3.png" alt="student">
             </picture>
           </div>
-          <div class="students-item col-span-4 ">
+          <div class="students-item col-span-4 " data-student="#student-4">
             <picture>
               <img class="w-full h-full" src="img/student-4.png" alt="student">
             </picture>
           </div>
-          <div class="students-item col-span-4 ">
+          <div class="students-item col-span-4 " data-student="#student-5">
             <picture>
               <img class="w-full h-full" src="img/student-5.png" alt="student">
             </picture>
           </div>
-          <div class="students-item col-span-4 ">
+          <div class="students-item col-span-4 " data-student="#student-6">
             <picture>
               <img class="w-full h-full" src="img/student-6.png" alt="student">
             </picture>
+
+          </div>
+          <div class="students-item col-span-4 " data-student="#student-7">
+            <picture>
+              <img class="w-full h-full" src="img/student-4.png" alt="student">
+            </picture>
           </div>
         </div>
-        <div class="students-content col-span-3 bg-[#65B500] rounded-[5px]">
-          <div class="content-wrap pt-[70px] pb-[30px] px-[30px] text-white">
+
+        <div class="students-content active col-span-3 bg-[#65B500] rounded-[5px]">
+          <div class="content-wrap active pt-[70px] pb-[30px] px-[30px] text-white" id="student-1">
             <div class="student-index pb-[60px]">
               <span>01</span>
+              <span>/</span>
+              <span>07</span>
+            </div>
+            <div class="student-university pb-3">
+              Anglia Ruskin University
+            </div>
+            <div class="student-name font-bold text-[20px] pb-5">
+              Сохибхон Бегмуродов
+            </div>
+            <div class="student-descr">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration
+              in some look even slightly believable.
+            </div>
+            <div class="student-social flex gap-x-2 mt-[50px]">
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-facebook" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+                </a>
+              </div>
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class=" group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-instagram" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="content-wrap pt-[70px] pb-[30px] px-[30px] text-white" id="student-2">
+            <div class="student-index pb-[60px]">
+              <span>02</span>
               <span>/</span>
               <span>06</span>
             </div>
@@ -311,7 +363,228 @@
               Сохибхон Бегмуродов
             </div>
             <div class="student-descr">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration
+              in some look even slightly believable.
+            </div>
+            <div class="student-social flex gap-x-2 mt-[50px]">
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-facebook" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+                </a>
+              </div>
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class=" group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-instagram" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="content-wrap pt-[70px] pb-[30px] px-[30px] text-white" id="student-3">
+            <div class="student-index pb-[60px]">
+              <span>03</span>
+              <span>/</span>
+              <span>07</span>
+            </div>
+            <div class="student-university pb-3">
+              Anglia Ruskin University
+            </div>
+            <div class="student-name font-bold text-[20px] pb-5">
+              Сохибхон Бегмуродов
+            </div>
+            <div class="student-descr">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration
+              in some look even slightly believable.
+            </div>
+            <div class="student-social flex gap-x-2 mt-[50px]">
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-facebook" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+                </a>
+              </div>
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class=" group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-instagram" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="content-wrap pt-[70px] pb-[30px] px-[30px] text-white" id="student-4">
+            <div class="student-index pb-[60px]">
+              <span>04</span>
+              <span>/</span>
+              <span>07</span>
+            </div>
+            <div class="student-university pb-3">
+              Anglia Ruskin University
+            </div>
+            <div class="student-name font-bold text-[20px] pb-5">
+              Сохибхон Бегмуродов
+            </div>
+            <div class="student-descr">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration
+              in some look even slightly believable.
+            </div>
+            <div class="student-social flex gap-x-2 mt-[50px]">
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-facebook" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+                </a>
+              </div>
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class=" group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-instagram" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="content-wrap pt-[70px] pb-[30px] px-[30px] text-white" id="student-5">
+            <div class="student-index pb-[60px]">
+              <span>05</span>
+              <span>/</span>
+              <span>07</span>
+            </div>
+            <div class="student-university pb-3">
+              Anglia Ruskin University
+            </div>
+            <div class="student-name font-bold text-[20px] pb-5">
+              Сохибхон Бегмуродов
+            </div>
+            <div class="student-descr">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration
+              in some look even slightly believable.
+            </div>
+            <div class="student-social flex gap-x-2 mt-[50px]">
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-facebook" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+                </a>
+              </div>
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class=" group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-instagram" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="content-wrap pt-[70px] pb-[30px] px-[30px] text-white" id="student-6">
+            <div class="student-index pb-[60px]">
+              <span>06</span>
+              <span>/</span>
+              <span>07</span>
+            </div>
+            <div class="student-university pb-3">
+              Anglia Ruskin University
+            </div>
+            <div class="student-name font-bold text-[20px] pb-5">
+              Сохибхон Бегмуродов
+            </div>
+            <div class="student-descr">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration
+              in some look even slightly believable.
+            </div>
+            <div class="student-social flex gap-x-2 mt-[50px]">
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-facebook" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+                </a>
+              </div>
+              <div class="social-item">
+                <a href="" class="block bg-[#70707033] p-4 rounded-full hover:bg-white group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class=" group-hover:stroke-[#343434] icon icon-tabler icon-tabler-brand-instagram" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="content-wrap pt-[70px] pb-[30px] px-[30px] text-white" id="student-7">
+            <div class="student-index pb-[60px]">
+              <span>07</span>
+              <span>/</span>
+              <span>07</span>
+            </div>
+            <div class="student-university pb-3">
+              Anglia Ruskin University
+            </div>
+            <div class="student-name font-bold text-[20px] pb-5">
+              Сохибхон Бегмуродов
+            </div>
+            <div class="student-descr">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration
               in some look even slightly believable.
             </div>
             <div class="student-social flex gap-x-2 mt-[50px]">
@@ -347,6 +620,7 @@
     </div>
   </section>
 
+
   <section class="statistics mt-[100px]">
     <div class="container mx-auto relative">
       <div class="relative z-10">
@@ -355,7 +629,7 @@
           There are many variations of passages of Lorem Ipsum available, but the
           majority have suffered alteration in some look even slightly believable.
         </p>
-        <button class="btn text-white text-xl bg-[#5BA400] w-40 py-3 rounded-[5px] mt-6">
+        <button class="btn modal-btn-open text-white text-xl bg-[#5BA400] w-40 py-3 rounded-[5px] mt-6">
           Записаться
         </button>
       </div>
@@ -435,7 +709,7 @@
                 <img class="h-full" src="img/aw.jpg" alt="">
               </picture>
               <div class="blog-content absolute bottom-6 right-0 left-0 p-4 mx-6 rounded-lg">
-                <h3 class="item-title text-[18px] font-bold mb-1">
+                <h3 class="text-[18px] font-bold mb-1">
                   Статья 1
                 </h3>
                 <div class="item-sub text-base">
@@ -531,6 +805,49 @@
     </div>
   </section>
 
+
+<section class="modal-form fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-[#000000cc] z-[99999] items-center justify-center ">
+  <div class="modal-inner relative">
+    <button class="modal-close-btn absolute right-0 -top-[50px]">
+      <picture>
+        <img src="img/close.png" alt="">
+      </picture>
+    </button>
+    <div class=" bg-white rounded-lg px-10 py-12">
+      <form action="" class="grid gap-y-4">
+        <div>
+          <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="text"
+            name="first_name" placeholder="Ваше имя">
+        </div>
+
+        <div>
+          <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="text"
+            name="last_name" placeholder="Ваша фамилия">
+        </div>
+
+        <div>
+          <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="tel"
+            name="phone" placeholder="Телефон">
+        </div>
+
+        <div>
+          <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="email"
+            name="email" placeholder="Почта">
+        </div>
+
+        <div>
+          <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="number"
+            name="age" placeholder="Ваш возраст" min="16" max="95">
+        </div>
+
+        <button type="submit" class="btn text-white bg-[#61AE00]">
+          Отправить
+        </button>
+
+      </form>
+    </div>
+  </div>
+</section>
 </main>
 
 <section class="form mt-[100px] relative">
@@ -557,14 +874,37 @@
 
 <footer class="footer mt-12">
   <div class="container mx-auto">
-    <div class="footer-inner grid grid-cols-12">
-      <div class="footer-map col-span-8 gap-x-[65px] rounded-[20px] overflow-hidden">
-        <script type="text/javascript" charset="utf-8" async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afe5175b5a610cdf5ae0d653f0a7f66dd58c8cf8def1f69e7aae21caddf74c73e&amp;width=100%25&amp;height=585&amp;lang=ru_RU&amp;scroll=true">
-        </script>
+
+    <div class="footer-inner grid grid-cols-12 gap-x-12">
+      <div id="footer-map" class="footer-map col-span-8 gap-x-[65px] rounded-[20px] overflow-hidden">
+
+      </div>
+      <div class="footer-filial col-span-4">
+        <h3 class="text-black text-[24px] font-bold mb-4">
+          Филиалы
+        </h3>
+        <ul class="grid gap-y-2">
+          <li data-filial='#filial-1'
+            class="filial-item active cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+            Ташкент
+          </li>
+          <li data-filial='#filial-2' data-longitude="39.65417" data-latitude="66.95972"
+            class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+            Самарканд
+          </li>
+          <li data-filial='#filial-3'
+            class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+            Жиззах
+          </li>
+          <li data-filial='#filial-4'
+            class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+            Навоий
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8">
+
+    <div class="footer-contact active grid grid-cols-4 my-[70px] gap-x-8" id='filial-1'>
 
       <div class="mail flex items-start gap-x-5">
         <div class="bg-[#f4f4f4] p-5 rounded-full">
@@ -594,7 +934,7 @@
         </div>
         <div class="grid w-full">
           <span class="text-lg font-bold">Адрес :</span>
-          <span class="text-sm text-[##70798B]">г. Ташкент, улица Амира
+          <span class="text-sm text-[##70798B]">улица Амира
             Темура, дом 107Б,
             Международный Бизнес Центр</span>
         </div>
@@ -610,9 +950,10 @@
             <polyline points="12 7 12 12 15 15" />
           </svg>
         </div>
-        <div class="gridw-full">
+        <div class="grid w-full">
           <span class="text-lg font-bold">Часы работы :</span>
-          <span class="text-sm text-[##70798B]"> Пон-пят </span>
+          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
+          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
         </div>
       </div>
 
@@ -632,14 +973,233 @@
           <a class="text-sm text-[##70798B]" href="tel:">+99899 999 99 99</a>
         </div>
       </div>
-    </div>
-    <div class="">
 
     </div>
+
+    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8" id='filial-2'>
+
+      <div class="mail flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold mb-1">Почта :</span>
+          <a class="text-sm text-[##70798B]" href="mailto:info@universegroup.uz">info@universegroup.uz</a>
+        </div>
+      </div>
+
+      <div class="location  flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="11" r="3" />
+            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Адрес :</span>
+          <span class="text-sm text-[##70798B]">
+            Самарканд
+          </span>
+        </div>
+      </div>
+
+      <div class="working-hours flex items-start gap-x-5 ">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <polyline points="12 7 12 12 15 15" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Часы работы :</span>
+          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
+          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
+        </div>
+      </div>
+
+      <div class="contact flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Контакты :</span>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 888 88 88</a>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 888 88 88</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8" id='filial-4'>
+
+      <div class="mail flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold mb-1">Почта :</span>
+          <a class="text-sm text-[##70798B]" href="mailto:info@universegroup.uz">info@universegroup.uz</a>
+        </div>
+      </div>
+
+      <div class="location  flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="11" r="3" />
+            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Адрес :</span>
+          <span class="text-sm text-[##70798B]">
+            Навои
+          </span>
+        </div>
+      </div>
+
+      <div class="working-hours flex items-start gap-x-5 ">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <polyline points="12 7 12 12 15 15" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Часы работы :</span>
+          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
+          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
+        </div>
+      </div>
+
+      <div class="contact flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Контакты :</span>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 000 99 55</a>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 000 99 55</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8" id='filial-3'>
+
+      <div class="mail flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold mb-1">Почта :</span>
+          <a class="text-sm text-[##70798B]" href="mailto:info@universegroup.uz">info@universegroup.uz</a>
+        </div>
+      </div>
+
+      <div class="location  flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="11" r="3" />
+            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Адрес :</span>
+          <span class="text-sm text-[##70798B]">
+            Жиззах
+          </span>
+        </div>
+      </div>
+
+      <div class="working-hours flex items-start gap-x-5 ">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <polyline points="12 7 12 12 15 15" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Часы работы :</span>
+          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
+          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
+        </div>
+      </div>
+
+      <div class="contact flex items-start gap-x-5">
+        <div class="bg-[#f4f4f4] p-5 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+          </svg>
+        </div>
+        <div class="grid w-full">
+          <span class="text-lg font-bold">Контакты :</span>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 777 77 77</a>
+          <a class="text-sm text-[##70798B]" href="tel:">+99899 777 77 77</a>
+        </div>
+      </div>
+
+    </div>
+
+
   </div>
 </footer>
 
-<script src="js/main.js?t=1641639942181"></script>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU" type="text/javascript"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/main.js?t=1641884143196"></script>
 
 </body>
 
