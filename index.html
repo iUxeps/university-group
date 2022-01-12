@@ -9,11 +9,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1641962514291">
+  <link rel="stylesheet" href="css/main.css?t=1641989859892">
 </head>
 
 <body>
-<header class="header absolute top-0 left-0 right-0 z-50 mt-6">
+<header class="header absolute top-0 left-0 z-[999999] right-0 mt-6">
   <div class="container mx-auto">
     <nav class="nav flex justify-between items-center ">
       <div class="logo">
@@ -21,20 +21,110 @@
           <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[140px]" src="img/logo.png" alt="logo"></picture>
         </a>
       </div>
+      <div class="flex justify-between items-center gap-x-[50px] xl:gap-x-[100px]">
+        <ul class="nav-list text-white font-medium text-xl flex items-center space-x-11 ">
+          <li class="nav-item hover:text-[#70CB00]"><a href="university-list.html" class="nav-link ">Университеты</a>
+          </li>
+          <li class="nav-item hover:text-[#70CB00]"><a href="country-list.html" class="nav-link ">Страны</a></li>
+          <li class="nav-item hover:text-[#70CB00]"><a href="service.html" class="nav-link ">Услуги</a></li>
+          <li class="nav-item hover:text-[#70CB00]"><a href="blog.html" class="nav-link ">FAQ</a></li>
+        </ul>
 
-      <ul class="nav-list text-white font-medium text-xl flex items-center space-x-11 ">
-        <li class="nav-item hover:text-[#70CB00]"><a href="university-list.html" class="nav-link ">Университеты</a></li>
-        <li class="nav-item hover:text-[#70CB00]"><a href="country-list.html" class="nav-link ">Страны</a></li>
-        <li class="nav-item hover:text-[#70CB00]"><a href="service.html" class="nav-link ">Услуги</a></li>
-        <li class="nav-item hover:text-[#70CB00]"><a href="blog.html" class="nav-link ">FAQ</a></li>
+        <ul class="nav-contact text-white flex items-center space-x-8">
+          <li class="nav-item ">
+            <a href="#" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-telegram hover:stroke-[#70CB00]" width="33" height="33"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="tel:+998977263837" class="nav-link flex items-center gap-x-2 group hover:text-[#70CB00]">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-headset group-hover:stroke-[#70CB00]" width="33" height="33"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="13" rx="2" width="4" height="6" />
+                <rect x="16" y="13" rx="2" width="4" height="6" />
+                <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
+                <path d="M18 19a6 3 0 0 1 -6 3" />
+              </svg>
+              <div>
+                <span class="block font-normal text-sm">Запись на консультацию</span>
+                <span class="block font-medium text-xl">+99899 999 99 99</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="switch-lang text-white relative">
+        <div class="lang">
+          <button class="flex gap-x-2 py-2 px-3 bg-slate-600 rounded-[5px] w-[100px]">
+            <picture>
+              <img src="img/ru.png" alt="">
+            </picture>
+            <span>
+              Рус
+            </span>
+          </button>
+          <div class="lang-dropdown absolute top-[50px] bg-slate-500 rounded-[5px] overflow-hidden w-[100px]">
+            <a href="#" class="flex gap-x-2 w-full items-center py-2 px-3 hover:bg-slate-400">
+              <picture>
+                <img src="img/en.png" alt="">
+              </picture>
+              <span>En</span>
+            </a>
+            <a href="#" class="flex gap-x-2 w-full items-center py-2 px-3 hover:bg-slate-400">
+              <picture>
+                <img src="img/uz.png" alt="">
+              </picture>
+              <span>Uz</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <button class="btn-open-menu">
+        <picture>
+          <img src="img/open.png" alt="">
+        </picture>
+      </button>
+    </nav>
+  </div>
+
+  <div class="adap-menu">
+    <div class="btn-close-menu absolute top-[50px] cursor-pointer">
+      <picture>
+        <img src="img/close.png" alt="">
+      </picture>
+    </div>
+    <div class="adap-inner grid gap-y-10">
+      <ul class="nav-list text-white font-semibold text-4xl text-center gap-y-4">
+        <li class="nav-item hover:text-[#000]">
+          <a href="university-list.html" class="nav-link ">Университеты</a>
+        </li>
+        <li class="nav-item hover:text-[#000]">
+          <a href="country-list.html" class="nav-link ">Страны</a>
+        </li>
+        <li class="nav-item hover:text-[#000]">
+          <a href="service.html" class="nav-link ">Услуги</a>
+        </li>
+        <li class="nav-item hover:text-[#000]">
+          <a href="blog.html" class="nav-link ">FAQ</a>
+        </li>
       </ul>
 
-      <ul class="nav-contact text-white flex items-center space-x-8">
-        <li class="nav-item ">
+      <ul class="nav-contact text-white text-center gap-y-4">
+        <li class="nav-item">
           <a href="#" class="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-brand-telegram hover:stroke-[#70CB00]" width="33" height="33"
-              viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+              class="mx-auto icon icon-tabler icon-tabler-brand-telegram hover:stroke-[#000]" width="44" height="44"
+              viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round"
               stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
@@ -42,10 +132,10 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="tel:+998977263837" class="nav-link flex items-center gap-x-2 group hover:text-[#70CB00]">
+          <a href="tel:+998977263837" class="nav-link flex items-center gap-x-2 group hover:text-[#000]">
             <svg xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-headset group-hover:stroke-[#70CB00]" width="33" height="33"
-              viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+              class="icon icon-tabler icon-tabler-headset group-hover:stroke-[#000]" width="44" height="44"
+              viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round"
               stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <rect x="4" y="13" rx="2" width="4" height="6" />
@@ -54,29 +144,31 @@
               <path d="M18 19a6 3 0 0 1 -6 3" />
             </svg>
             <div>
-              <span class="block font-normal text-sm">Запись на консультацию</span>
-              <span class="block font-medium text-xl">+99899 999 99 99</span>
+              <span class="block font-normal text-xl">Запись на консультацию</span>
+              <span class="block font-medium text-2xl">+99899 999 99 99</span>
             </div>
           </a>
         </li>
       </ul>
-    </nav>
+    </div>
+
   </div>
 </header>
 
 <main class="main">
 
   <section class="home">
-    <div class="container mx-auto pt-[234px]">
-      <h1 class="title font-bold text-left text-[55px] text-white leading-[59px] max-w-[570px] z-10 relative">
+    <div class="container mx-auto pt-[150px] sm:pt-[234px]">
+      <h1
+        class="title font-bold text-left text-[40px] leading-[48px] sm:text-[55px] text-white sm:leading-[59px] max-w-[570px] z-10 relative">
         Всегда мечтали учиться за рубежом?
       </h1>
-      <p class="subtitle font-semibold text-2xl text-white max-w-[570px] mt-6 z-10 relative">
+      <p class="subtitle font-semibold text-xl sm:text-2xl text-white max-w-[570px] mt-6 z-10 relative">
         Universe Group поможет вам на каждом этапе поступления в престижный ВУЗ!
         Спешите записаться на бесплатную консультацию
       </p>
 
-      <div class="home-btns z-10 relative font-semibold text-xl mt-7 relative flex gap-x-[30px]">
+      <div class="home-btns z-10 relative font-semibold text-xl mt-7 relative flex gap-x-[30px] gap-y-7 flex-wrap justify-center sm:flex-nowrap sm:justify-start">
   <a href="#" class="btn w-40">Позвонить</a>
   <button class="btn w-40 modal-btn-open">Записаться</button>
 </div>
@@ -84,15 +176,16 @@
     </div>
   </section>
 
-  <section class="choose-us relative top-[-70px] left-0 right-0  z-50">
+  <section class="choose-us relative top-[-50px] md:top-[-70px] left-0 right-0  z-50">
     <div class="container mx-auto">
       <div class="bg-white choose-us-inner box-shadow pt-[57px] pb-[78px] rounded-[12px]">
         <h2 class="title">
           Почему <span class="text-[#61AE00]"> выбирают нас ? </span>
         </h2>
-        <div class="choose-wrap px-[62px] pt-[67px] grid grid-cols-12 gap-x-[74px] gap-y-[85px]">
-          <div class="choose-item col-span-4">
-            <picture><source srcset="img/choose-img.webp" type="image/webp"><img src="img/choose-img.png" alt="" /></picture>
+        <div
+          class="choose-wrap px-5 xl:px-[62px] pt-[67px] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-[24px] gap-y-[32px] sm:gap-x-[50px] sm:gap-y-[60px]  md:gap-x-[74px]  md:gap-y-[85px]">
+          <div class="choose-item">
+            <picture><source srcset="img/choose-img.webp" type="image/webp"><img class="w-[56px] h-[56px]" src="img/choose-img.png" alt="" /></picture>
             <div class="choose-item-title text-[#030314] font-bold text-[21px] mt-5">
               Услуги образования за рубежом
             </div>
@@ -101,8 +194,8 @@
               the majority have suffered.
             </div>
           </div>
-          <div class="choose-item col-span-4">
-            <picture><source srcset="img/choose-img.webp" type="image/webp"><img src="img/choose-img.png" alt="" /></picture>
+          <div class="choose-item">
+            <picture><source srcset="img/choose-img.webp" type="image/webp"><img class="w-[56px] h-[56px]" src="img/choose-img.png" alt="" /></picture>
             <div class="choose-item-title text-[#030314] font-bold text-[21px] mt-5">
               Документальное сопровождение
             </div>
@@ -111,7 +204,7 @@
               the majority have suffered.
             </div>
           </div>
-          <div class="choose-item col-span-4">
+          <div class="choose-item">
             <picture><source srcset="img/choose-img.webp" type="image/webp"><img src="img/choose-img.png" alt="" /></picture>
             <div class="choose-item-title text-[#030314] font-bold text-[21px] mt-5">
               Помощь в получении грантов и стипендий
@@ -121,8 +214,8 @@
               the majority have suffered.
             </div>
           </div>
-          <div class="choose-item col-span-4">
-            <picture><source srcset="img/choose-img.webp" type="image/webp"><img src="img/choose-img.png" alt="" /></picture>
+          <div class="choose-item">
+            <picture><source srcset="img/choose-img.webp" type="image/webp"><img class="w-[56px] h-[56px]" src="img/choose-img.png" alt="" /></picture>
             <div class="choose-item-title text-[#030314] font-bold text-[21px] mt-5">
               Визовая поддержка
             </div>
@@ -131,7 +224,7 @@
               the majority have suffered.
             </div>
           </div>
-          <div class="choose-item col-span-4">
+          <div class="choose-item">
             <picture><source srcset="img/choose-img.webp" type="image/webp"><img src="img/choose-img.png" alt="" /></picture>
             <div class="choose-item-title text-[#030314] font-bold text-[21px] mt-5">
               Услуги за рубежом
@@ -141,7 +234,7 @@
               the majority have suffered.
             </div>
           </div>
-          <div class="choose-item col-span-4">
+          <div class="choose-item">
             <picture><source srcset="img/choose-img.webp" type="image/webp"><img src="img/choose-img.png" alt="" /></picture>
             <div class="choose-item-title text-[#030314] font-bold text-[21px] mt-5">
               Услуги за Индивидуальный подход к каждому клиенту
@@ -162,7 +255,7 @@
         Мы отправляем <span class="text-[#61AE00]"> учиться в </span>
       </h2>
       <a href="#"
-        class="text-[#707070] text-xl font-semibold items-center hover:text-[#61AE00] group absolute right-[10px] top-[50px]">
+        class="view-all text-[#707070] text-xl font-semibold items-center hover:text-[#61AE00] group absolute right-[10px] top-[50px]">
         Просмотреть все
         <svg xmlns="http://www.w3.org/2000/svg"
           class="inline-block group-hover:stroke-[#61AE00] icon icon-tabler icon-tabler-arrow-narrow-right" width="36"
@@ -174,85 +267,83 @@
           <line x1="15" y1="8" x2="19" y2="12" />
         </svg>
       </a>
-      <div class="row grid gap-y-5">
-        <div class="send-study-wrap grid grid-cols-12 gap-x-7 gap-y-5">
-          <div class="send-study-item relative rounded-[5px] overflow-hidden">
-            <a href="#" class="relative block h-full">
-              <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
-            </a>
-            <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
-              <h3 class="text-lg font-bold">Germany1</h3>
-              <p class="text-sm text-[#D7D7D7] font-medium">
-                The University of Lancaster Germany – Кампус государственного
-                университета, основанного в 1964 году. Главный же кампус
-                находится в городе Ланкастер,Англия.
-              </p>
-            </div>
+      <div class="send-study-wrap grid grid-cols-12  sm:gap-x-7 gap-y-5">
+        <div class="send-study-item h-[350px] relative rounded-[5px] overflow-hidden">
+          <a href="#" class="relative block h-full">
+            <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
+          </a>
+          <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
+            <h3 class="text-lg font-bold">Germany1</h3>
+            <p class="text-sm text-[#D7D7D7] font-medium">
+              The University of Lancaster Germany – Кампус государственного
+              университета, основанного в 1964 году. Главный же кампус
+              находится в городе Ланкастер,Англия.
+            </p>
           </div>
-          <div class="send-study-item relative rounded-[5px] overflow-hidden">
-            <a href="#" class="relative block h-full">
-              <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
-            </a>
-            <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
-              <h3 class="text-lg font-bold">Germany2</h3>
-              <p class="text-sm text-[#D7D7D7] font-medium">
-                The University of Lancaster Germany – Кампус государственного
-                университета, основанного в 1964 году. Главный же кампус
-                находится в городе Ланкастер,Англия.
-              </p>
-            </div>
+        </div>
+        <div class="send-study-item h-[350px] relative rounded-[5px] overflow-hidden">
+          <a href="#" class="relative block h-full">
+            <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
+          </a>
+          <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
+            <h3 class="text-lg font-bold">Germany2</h3>
+            <p class="text-sm text-[#D7D7D7] font-medium">
+              The University of Lancaster Germany – Кампус государственного
+              университета, основанного в 1964 году. Главный же кампус
+              находится в городе Ланкастер,Англия.
+            </p>
           </div>
-          <div class="send-study-item relative rounded-[5px] overflow-hidden">
-            <a href="#" class="relative block h-full">
-              <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
-            </a>
-            <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
-              <h3 class="text-lg font-bold">Germany3</h3>
-              <p class="text-sm text-[#D7D7D7] font-medium">
-                The University of Lancaster Germany – Кампус государственного
-                университета, основанного в 1964 году. Главный же кампус
-                находится в городе Ланкастер,Англия.
-              </p>
-            </div>
+        </div>
+        <div class="send-study-item h-[350px] relative rounded-[5px] overflow-hidden">
+          <a href="#" class="relative block h-full">
+            <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
+          </a>
+          <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
+            <h3 class="text-lg font-bold">Germany3</h3>
+            <p class="text-sm text-[#D7D7D7] font-medium">
+              The University of Lancaster Germany – Кампус государственного
+              университета, основанного в 1964 году. Главный же кампус
+              находится в городе Ланкастер,Англия.
+            </p>
           </div>
-          <div class="send-study-item relative rounded-[5px] overflow-hidden">
-            <a href="#" class="relative block h-full">
-              <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
-            </a>
-            <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
-              <h3 class="text-lg font-bold">Germany3</h3>
-              <p class="text-sm text-[#D7D7D7] font-medium">
-                The University of Lancaster Germany – Кампус государственного
-                университета, основанного в 1964 году. Главный же кампус
-                находится в городе Ланкастер,Англия.
-              </p>
-            </div>
+        </div>
+        <div class="send-study-item h-[350px] relative rounded-[5px] overflow-hidden">
+          <a href="#" class="relative block h-full">
+            <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
+          </a>
+          <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
+            <h3 class="text-lg font-bold">Germany3</h3>
+            <p class="text-sm text-[#D7D7D7] font-medium">
+              The University of Lancaster Germany – Кампус государственного
+              университета, основанного в 1964 году. Главный же кампус
+              находится в городе Ланкастер,Англия.
+            </p>
           </div>
-          <div class="send-study-item relative rounded-[5px] overflow-hidden">
-            <a href="#" class="relative block h-full">
-              <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
-            </a>
-            <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
-              <h3 class="text-lg font-bold">Germany3</h3>
-              <p class="text-sm text-[#D7D7D7] font-medium">
-                The University of Lancaster Germany – Кампус государственного
-                университета, основанного в 1964 году. Главный же кампус
-                находится в городе Ланкастер,Англия.
-              </p>
-            </div>
+        </div>
+        <div class="send-study-item h-[350px] relative rounded-[5px] overflow-hidden">
+          <a href="#" class="relative block h-full">
+            <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
+          </a>
+          <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
+            <h3 class="text-lg font-bold">Germany3</h3>
+            <p class="text-sm text-[#D7D7D7] font-medium">
+              The University of Lancaster Germany – Кампус государственного
+              университета, основанного в 1964 году. Главный же кампус
+              находится в городе Ланкастер,Англия.
+            </p>
           </div>
-          <div class="send-study-item relative rounded-[5px] overflow-hidden">
-            <a href="#" class="relative block h-full">
-              <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
-            </a>
-            <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
-              <h3 class="text-lg font-bold">Germany3</h3>
-              <p class="text-sm text-[#D7D7D7] font-medium">
-                The University of Lancaster Germany – Кампус государственного
-                университета, основанного в 1964 году. Главный же кампус
-                находится в городе Ланкастер,Англия.
-              </p>
-            </div>
+        </div>
+        <div class="send-study-item h-[350px] relative rounded-[5px] overflow-hidden">
+          <a href="#" class="relative block h-full">
+            <picture><source srcset="img/study-country.webp" type="image/webp"><img class="w-full h-full rounded-[5px] relative" src="img/study-country.png" alt="" /></picture>
+          </a>
+          <div class="send-study-content text-white absolute bottom-0 right-0 left-0 px-[32px] pb-[22px] z-50">
+            <h3 class="text-lg font-bold">Germany3</h3>
+            <p class="text-sm text-[#D7D7D7] font-medium">
+              The University of Lancaster Germany – Кампус государственного
+              университета, основанного в 1964 году. Главный же кампус
+              находится в городе Ланкастер,Англия.
+            </p>
           </div>
         </div>
       </div>
@@ -264,48 +355,50 @@
       <h2 class="title text-center ">
         Наши <span class="text-[#61AE00]"> студенты </span>
       </h2>
-      <div class="row grid grid-cols-12 gap-x-7 mt-[33px]">
+      <div class="row grid grid-cols-12 gap-y-6 gap-x-5 sm:gap-y-0 lg:gap-x-7 mt-[33px]">
 
-        <div class="students-wrap col-span-9 grid grid-cols-12 gap-7 h-[588px] overflow-auto pr-2">
-          <div class="students-item active col-span-4 " data-student="#student-1">
+        <div
+          class="students-wrap col-span-12 gap-y-5 sm:col-span-7 md:col-span-8 xl:col-span-9 grid grid-cols-12 sm:gap-7 h-[588px] overflow-auto pr-2">
+          <div class="students-item active col-span-12 md:col-span-6 xl:col-span-4 " data-student="#student-1">
             <picture>
               <img class="w-full h-full" src="img/student.png" alt="student">
             </picture>
           </div>
-          <div class="students-item col-span-4 " data-student="#student-2">
+          <div class="students-item col-span-12 md:col-span-6 xl:col-span-4 " data-student="#student-2">
             <picture>
               <img class="w-full h-full" src="img/student-2.png" alt="student">
             </picture>
           </div>
-          <div class="students-item col-span-4 " data-student="#student-3">
+          <div class="students-item col-span-12 md:col-span-6 xl:col-span-4 " data-student="#student-3">
             <picture>
               <img class="w-full h-full" src="img/student-3.png" alt="student">
             </picture>
           </div>
-          <div class="students-item col-span-4 " data-student="#student-4">
+          <div class="students-item col-span-12 md:col-span-6 xl:col-span-4 " data-student="#student-4">
             <picture>
               <img class="w-full h-full" src="img/student-4.png" alt="student">
             </picture>
           </div>
-          <div class="students-item col-span-4 " data-student="#student-5">
+          <div class="students-item col-span-12 md:col-span-6 xl:col-span-4 " data-student="#student-5">
             <picture>
               <img class="w-full h-full" src="img/student-5.png" alt="student">
             </picture>
           </div>
-          <div class="students-item col-span-4 " data-student="#student-6">
+          <div class="students-item col-span-12 md:col-span-6 xl:col-span-4 " data-student="#student-6">
             <picture>
               <img class="w-full h-full" src="img/student-6.png" alt="student">
             </picture>
 
           </div>
-          <div class="students-item col-span-4 " data-student="#student-7">
+          <div class="students-item col-span-12 md:col-span-6 xl:col-span-4 " data-student="#student-7">
             <picture>
               <img class="w-full h-full" src="img/student-4.png" alt="student">
             </picture>
           </div>
         </div>
 
-        <div class="students-content active col-span-3 bg-[#65B500] rounded-[5px]">
+        <div
+          class="students-content active col-span-12 sm:col-span-5 md:col-span-4 xl:col-span-3 bg-[#65B500] rounded-[5px]">
           <div class="content-wrap active pt-[70px] pb-[30px] px-[30px] text-white" id="student-1">
             <div class="student-index pb-[60px]">
               <span>01</span>
@@ -643,13 +736,16 @@
           Записаться
         </button>
       </div>
-      <div class="static-wrap relative -top-[120px]">
-        <picture>
-          <img src="img/line-statistics.png" alt="">
-        </picture>
-        <div class="static-country absolute left-[200px] -bottom-[100px]">
+      <div
+        class="static-wrap mt-8 sm:m-0 grid grid-cols-2 gap-y-3 sm:gap-y-0 sm:grid-cols-3 justify-center sm:block sm:relative -top-[120px]">
+        <div class="hidden sm:block">
           <picture>
-            <img class="static-img w-[76px] h-full" src="img/country.png" alt="">
+            <img src="img/line-statistics.png" alt="">
+          </picture>
+        </div>
+        <div class="static-country mx-auto text-center sm:m-0 sm:absolute left-[70px] md:left-[150px] -bottom-[100px]">
+          <picture>
+            <img class="w-[76px] h-[76px] mx-auto sm:m-0  static-img w-[76px] h-full" src="img/country.png" alt="">
           </picture>
           <div class="static-content grid">
             <span class="text-[42px] font-bold">
@@ -660,9 +756,10 @@
             </span>
           </div>
         </div>
-        <div class="static-universe absolute right-[450px] top-[180px]">
+        <div
+          class="static-universe mx-auto text-center sm:m-0 sm:absolute right-[200px] md:right-[300px] top-[130px] xl:right-[450px] md:top-[160px]">
           <picture>
-            <img class="static-img w-[76px] h-full" src="img/universe.png" alt="">
+            <img class="w-[76px] h-[76px] mx-auto sm:m-0  static-img w-[76px] h-full" src="img/universe.png" alt="">
           </picture>
           <div class="static-content grid">
             <span class="text-[42px] font-bold">
@@ -673,9 +770,10 @@
             </span>
           </div>
         </div>
-        <div class="static-student absolute right-[180px] -top-[35px]">
+        <div
+          class="static-student mx-auto text-center sm:m-0 sm:absolute -top-[30px] right-0 xl:right-[180px] xl:-top-[35px]">
           <picture>
-            <img class="static-img w-[76px] h-full" src="img/students.png" alt="">
+            <img class="w-[76px] h-[76px] mx-auto sm:m-0  static-img w-[76px] h-full" src="img/students.png" alt="">
           </picture>
           <div class="static-content grid">
             <span class="text-[42px] font-bold">
@@ -711,14 +809,14 @@
           </svg>
         </a>
 
-        <div class="blog-wrap grid grid-cols-12 gap-x-6 gap-y-5 mt-7">
+        <div class="blog-wrap grid grid-cols-3 gap-x-6 gap-y-5 mt-7">
 
-          <div class="col-span-4 relative rounded-lg overflow-hidden h-[324px]">
+          <div class=" relative rounded-lg overflow-hidden h-[324px]">
             <a href="" class="blog-item">
               <picture>
                 <img class="h-full" src="img/aw.jpg" alt="">
               </picture>
-              <div class="blog-content absolute bottom-6 right-0 left-0 p-4 mx-6 rounded-lg">
+              <div class="blog-content absolute bottom-4 right-0 left-0 p-4 mx-4 rounded-lg">
                 <h3 class="text-[18px] font-bold mb-1">
                   Статья 1
                 </h3>
@@ -729,12 +827,12 @@
             </a>
           </div>
 
-          <div class="col-span-4 relative rounded-lg overflow-hidden h-[324px]">
+          <div class=" relative rounded-lg overflow-hidden h-[324px]">
             <a href="" class="blog-item">
               <picture>
                 <img class="h-full" src="img/aw1.png" alt="">
               </picture>
-              <div class="blog-content absolute bottom-6 right-0 left-0 p-4 mx-6 rounded-lg">
+              <div class="blog-content absolute bottom-4 right-0 left-0 p-4 mx-4 rounded-lg">
                 <h3 class=" text-[18px] font-bold mb-1">
                   Статья 1
                 </h3>
@@ -745,12 +843,12 @@
             </a>
           </div>
 
-          <div class="col-span-4 relative rounded-lg overflow-hidden h-[324px]">
+          <div class=" relative rounded-lg overflow-hidden h-[324px]">
             <a href="" class="blog-item">
               <picture>
                 <img class="h-full" src="img/aw2.jpg" alt="">
               </picture>
-              <div class="blog-content absolute bottom-6 right-0 left-0 p-4 mx-6 rounded-lg">
+              <div class="blog-content absolute bottom-4 right-0 left-0 p-4 mx-4 rounded-lg">
                 <h3 class=" text-[18px] font-bold mb-1">
                   Статья 1
                 </h3>
@@ -761,12 +859,12 @@
             </a>
           </div>
 
-          <div class="col-span-4 relative rounded-lg overflow-hidden h-[324px]">
+          <div class=" relative rounded-lg overflow-hidden h-[324px]">
             <a href="" class="blog-item">
               <picture>
                 <img class="h-full" src="img/aw2.jpg" alt="">
               </picture>
-              <div class="blog-content absolute bottom-6 right-0 left-0 p-4 mx-6 rounded-lg">
+              <div class="blog-content absolute bottom-4 right-0 left-0 p-4 mx-4 rounded-lg">
                 <h3 class=" text-[18px] font-bold mb-1">
                   Статья 1
                 </h3>
@@ -777,12 +875,12 @@
             </a>
           </div>
 
-          <div class="col-span-4 relative rounded-lg overflow-hidden h-[324px]">
+          <div class=" relative rounded-lg overflow-hidden h-[324px]">
             <a href="" class="blog-item">
               <picture>
                 <img class="h-full" src="img/aw1.png" alt="">
               </picture>
-              <div class="blog-content absolute bottom-6 right-0 left-0 p-4 mx-6 rounded-lg">
+              <div class="blog-content absolute bottom-4 right-0 left-0 p-4 mx-4 rounded-lg">
                 <h3 class=" text-[18px] font-bold mb-1">
                   Статья 1
                 </h3>
@@ -793,12 +891,12 @@
             </a>
           </div>
 
-          <div class="col-span-4 relative rounded-lg overflow-hidden h-[324px]">
+          <div class=" relative rounded-lg overflow-hidden h-[324px]">
             <a href="" class="blog-item">
               <picture>
                 <img class="h-full" src="img/aw.jpg" alt="">
               </picture>
-              <div class="blog-content absolute bottom-6 right-0 left-0 p-4 mx-6 rounded-lg">
+              <div class="blog-content absolute bottom-4 right-0 left-0 p-4 mx-4 rounded-lg">
                 <h3 class=" text-[18px] font-bold mb-1">
                   Статья 1
                 </h3>
@@ -862,20 +960,25 @@
 
 c<section class="form mt-[100px] relative">
   <div class="container mx-auto">
-    <div class="form-inner py-[127px] relative z-10">
-      <h2 class="title text-white text-[50px] mb-[32px]">Остались вопросы, но нет ответов?</h2>
-      <form action="" class="flex gap-x-3 items-center justify-between ">
-        <input class="w-full py-5 pl-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
+    <div class="form-inner py-[50px] md:py-[127px] relative z-10">
+      <h2 class="title text-white text-[32px] sm:text-[40px] md:text-[50px] mb-[32px]">Остались вопросы, но нет ответов?</h2>
+      <form action=""
+        class="grid grid-cols-12 gap-x-3 items-center justify-between flex-wrap gap-y-4 xl:gap-y-0">
+        <input
+          class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-5 pl-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
           type="text" name="name" placeholder="Имя">
-        <input class="w-full py-5 pl-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
+        <input
+          class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-5 pl-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
           type="tel" name="phone" placeholder="Телефон">
-        <button type="button" class="btn w-40 bg-white">
-          Записаться
-        </button>
+        <div class="mx-auto col-span-12 xl:col-span-2">
+          <button type="button" class="btn w-40 bg-white">
+            Записаться
+          </button>
+        </div>
       </form>
-      <div class="text-[30px] font-bold text-white text-center mt-[20px]">
+      <div class="text-[24px] md:text-[30px] font-bold text-white text-center mt-[20px]">
         Или свяжитесь с нами по номеру : <a href="tel:+998977263837"
-          class="hover:text-[#70CB00] duration-100 delay-100 ease-in">+99899
+          class="hover:text-[#70CB00] duration-100 delay-100 ease-in block md:inline-block">+99899
           999 99 99</a>
       </div>
     </div>
@@ -885,28 +988,34 @@ c<section class="form mt-[100px] relative">
 <footer class="footer mt-12">
   <div class="container mx-auto">
 
-    <div class="footer-inner grid grid-cols-12 gap-x-12">
-      <div id="footer-map" class="footer-map col-span-8 gap-x-[65px] rounded-[20px] overflow-hidden">
+    <div class="footer-inner grid grid-cols-12 sm:gap-x-8 gap-y-5 xl:gap-x-12 md:gap-y-0">
+      <div id="footer-map"
+        class="footer-map order-2 col-span-12 h-[400px] md:order-2 md:h-[560px] md:col-span-8 gap-x-[65px] rounded-[20px] overflow-hidden">
 
       </div>
-      <div class="footer-filial col-span-4">
+      <div class="footer-filial order-1 col-span-12 md:order-2 md:col-span-4 ">
         <h3 class="text-black text-[24px] font-bold mb-4">
           Филиалы
         </h3>
         <ul class="grid gap-y-2">
-          <li data-filial='#filial-1'
+          <li data-address="улица Амира Темура, дом 107Б, Международный Бизнес Центр"
+            data-contacts="['+998 99 900 99 99', '+998 98 888 88 88']" data-longitude="41.26465"
+            data-latitude="69.21627"
             class="filial-item active cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
             Ташкент
           </li>
-          <li data-filial='#filial-2' data-longitude="39.65417" data-latitude="66.95972"
+          <li data-address="Самарканд" data-contacts="['+998 88 888 88 88', '+998 97 777 77 77']"
+            data-longitude="39.65417" data-latitude="66.95972"
             class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
             Самарканд
           </li>
-          <li data-filial='#filial-3'
+          <li data-address="Жиззах" data-contacts="['+998 11 111 11 11', '+998 22 222 22 22']" data-longitude="40.11583"
+            data-latitude="67.84222"
             class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
             Жиззах
           </li>
-          <li data-filial='#filial-4'
+          <li data-address="Навоий" data-contacts="['+998 44 444 44 44', '+998 55 555 55 55']" data-longitude="40.08444"
+            data-latitude="65.37917"
             class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
             Навоий
           </li>
@@ -914,7 +1023,8 @@ c<section class="form mt-[100px] relative">
       </div>
     </div>
 
-    <div class="footer-contact active grid grid-cols-4 my-[70px] gap-x-8" id='filial-1'>
+
+    <div class="footer-contact active grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 my-[70px] gap-y-5 gap-x-8" id='filial-1'>
 
       <div class="mail flex items-start gap-x-5">
         <div class="bg-[#f4f4f4] p-5 rounded-full">
@@ -944,9 +1054,8 @@ c<section class="form mt-[100px] relative">
         </div>
         <div class="grid w-full">
           <span class="text-lg font-bold">Адрес :</span>
-          <span class="text-sm text-[##70798B]">улица Амира
-            Темура, дом 107Б,
-            Международный Бизнес Центр</span>
+          <span class="footer-address text-sm text-[#70798B]">улица Амира Темура, дом 107Б, Международный Бизнес
+            Центр</span>
         </div>
       </div>
 
@@ -979,224 +1088,10 @@ c<section class="form mt-[100px] relative">
         </div>
         <div class="grid w-full">
           <span class="text-lg font-bold">Контакты :</span>
-          <a class="text-sm text-[##70798B]" href="tel:">+99899 999 99 99</a>
-          <a class="text-sm text-[##70798B]" href="tel:">+99899 999 99 99</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8" id='filial-2'>
-
-      <div class="mail flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <polyline points="3 7 12 13 21 7" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold mb-1">Почта :</span>
-          <a class="text-sm text-[##70798B]" href="mailto:info@universegroup.uz">info@universegroup.uz</a>
-        </div>
-      </div>
-
-      <div class="location  flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="12" cy="11" r="3" />
-            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Адрес :</span>
-          <span class="text-sm text-[##70798B]">
-            Самарканд
+          <span class="phone-numbers text-sm text-[#70798B] grid">
+            <a href="tel:+998999999999" class="inline-block">+998 99 999 99 99</a>
+            <a href="tel:+998888888888" class="inline-block">+998 88 888 88 88</a>
           </span>
-        </div>
-      </div>
-
-      <div class="working-hours flex items-start gap-x-5 ">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="12" cy="12" r="9" />
-            <polyline points="12 7 12 12 15 15" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Часы работы :</span>
-          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
-          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
-        </div>
-      </div>
-
-      <div class="contact flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Контакты :</span>
-          <a class="text-sm text-[##70798B]" href="tel:">+99899 888 88 88</a>
-          <a class="text-sm text-[##70798B]" href="tel:">+99899 888 88 88</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8" id='filial-4'>
-
-      <div class="mail flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <polyline points="3 7 12 13 21 7" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold mb-1">Почта :</span>
-          <a class="text-sm text-[##70798B]" href="mailto:info@universegroup.uz">info@universegroup.uz</a>
-        </div>
-      </div>
-
-      <div class="location  flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="12" cy="11" r="3" />
-            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Адрес :</span>
-          <span class="text-sm text-[##70798B]">
-            Навои
-          </span>
-        </div>
-      </div>
-
-      <div class="working-hours flex items-start gap-x-5 ">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="12" cy="12" r="9" />
-            <polyline points="12 7 12 12 15 15" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Часы работы :</span>
-          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
-          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
-        </div>
-      </div>
-
-      <div class="contact flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Контакты :</span>
-          <a class="text-sm text-[##70798B]" href="tel:">+99899 000 99 55</a>
-          <a class="text-sm text-[##70798B]" href="tel:">+99899 000 99 55</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-contact grid grid-cols-4 my-[70px] gap-x-8" id='filial-3'>
-
-      <div class="mail flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <polyline points="3 7 12 13 21 7" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold mb-1">Почта :</span>
-          <a class="text-sm text-[##70798B]" href="mailto:info@universegroup.uz">info@universegroup.uz</a>
-        </div>
-      </div>
-
-      <div class="location  flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="12" cy="11" r="3" />
-            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Адрес :</span>
-          <span class="text-sm text-[##70798B]">
-            Жиззах
-          </span>
-        </div>
-      </div>
-
-      <div class="working-hours flex items-start gap-x-5 ">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="12" cy="12" r="9" />
-            <polyline points="12 7 12 12 15 15" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Часы работы :</span>
-          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
-          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
-        </div>
-      </div>
-
-      <div class="contact flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-          </svg>
-        </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Контакты :</span>
-          <a class="text-sm text-[##70798B]" href="tel:">+99899 777 77 77</a>
-          <a class="text-sm text-[##70798B]" href="tel:">+99899 777 77 77</a>
         </div>
       </div>
 
@@ -1207,9 +1102,10 @@ c<section class="form mt-[100px] relative">
 </footer>
 
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU"
+  type="text/javascript"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="js/main.js?t=1641962514291"></script>
+<script src="js/main.js?t=1641989859892"></script>
 
 </body>
 
