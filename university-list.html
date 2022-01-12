@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1641904849171">
+  <link rel="stylesheet" href="css/main.css?t=1641962514324">
 </head>
 
 <body>
@@ -115,14 +115,14 @@
             </div>
 
             <div class="univer-price-filter relative">
-              <section class="range-slider relative">
+              <!-- <section class="range-slider relative">
                 <div class="input-range-container">
                   <div class="input-range-tracker"></div>
                   <div class="input-range-tracker-between"></div>
                   <input type="range" max="100" value="20" name="range-lower" id="range-lower">
                   <input type="range" max="100" value="80" name="range-upper" id="range-upper">
                 </div>
-              </section>
+              </section> -->
             </div>
           </form>
         </div>
@@ -276,6 +276,49 @@
       </ul>
     </div>
   </section>
+
+  <section class="modal-form fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-[#000000cc] z-[99999] items-center justify-center ">
+  <div class="modal-inner relative">
+    <button class="modal-close-btn absolute right-0 -top-[50px]">
+      <picture>
+        <img src="img/close.png" alt="">
+      </picture>
+    </button>
+    <div class=" bg-white rounded-lg px-10 py-12">
+      <form action="" class="grid gap-y-4">
+        <div>
+          <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="text"
+            name="first_name" placeholder="Ваше имя">
+        </div>
+
+        <div>
+          <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="text"
+            name="last_name" placeholder="Ваша фамилия">
+        </div>
+
+        <div>
+          <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="tel"
+            name="phone" placeholder="Телефон">
+        </div>
+
+        <div>
+          <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="email"
+            name="email" placeholder="Почта">
+        </div>
+
+        <div>
+          <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="number"
+            name="age" placeholder="Ваш возраст" min="16" max="95">
+        </div>
+
+        <button type="submit" class="btn text-white bg-[#61AE00]">
+          Отправить
+        </button>
+
+      </form>
+    </div>
+  </div>
+</section>
 
 </main>
 
@@ -628,7 +671,7 @@ c<section class="form mt-[100px] relative">
 
 <script src="https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU" type="text/javascript"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="js/main.js?t=1641904849171"></script>
+<script src="js/main.js?t=1641962514324"></script>
 
 </body>
 
