@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1641989859941">
+  <link rel="stylesheet" href="css/main.css?t=1642058840139">
 </head>
 
 <body>
@@ -144,7 +144,7 @@
               <path d="M18 19a6 3 0 0 1 -6 3" />
             </svg>
             <div>
-              <span class="block font-normal text-xl">Запись на консультацию</span>
+              <span class="block font-normal text-xl hidden sm:block">Запись на консультацию</span>
               <span class="block font-medium text-2xl">+99899 999 99 99</span>
             </div>
           </a>
@@ -187,9 +187,9 @@
     </div>
   </section>
 
-  <section class="about-univer relative top-[-70px] left-0 right-0  z-50">
+  <section class="about-univer relative top-[-30px] sm:top-[-70px] left-0 right-0  z-50">
     <div class="container mx-auto relative">
-      <div class="about-univer-inner px-10 pt-11 bg-white rounded-[12px]">
+      <div class="about-univer-inner px-3 sm:px-5 md:px-10 pt-11 bg-white rounded-[12px]">
         <h2 class="text-[25px] text-light mb-5 font-bold">
           University of Connecticut
         </h2>
@@ -215,23 +215,23 @@
   </section>
 
   <section class="swiper-univer relative">
-    <div class="container mx-auto relative px-10 ">
+    <div class="container mx-auto relative px-4 sm:px-5 md:px-10px-10 ">
 
       <div class="swiper" id="univer-swiper">
         <div class="swiper-wrapper rounded-[12px]">
           <div class="swiper-slide rounded-[12px]">
             <picture>
-              <img class="rounded-[12px] h-[500px] w-full" src="img/aw1.png" alt="">
+              <img class="rounded-[12px] h-[300px] sm:h-[500px] w-full" src="img/aw1.png" alt="">
             </picture>
           </div>
           <div class="swiper-slide rounded-[12px]">
             <picture>
-              <img class="rounded-[12px] h-[500px] w-full" src="img/aw.jpg" alt="">
+              <img class="rounded-[12px] h-[300px] sm:h-[500px] w-full" src="img/aw.jpg" alt="">
             </picture>
           </div>
           <div class="swiper-slide rounded-[12px]">
             <picture>
-              <img class="rounded-[12px] h-[500px] w-full" src="img/aw2.jpg" alt="">
+              <img class="rounded-[12px] h-[300px] sm:h-[500px] w-full" src="img/aw2.jpg" alt="">
             </picture>
           </div>
         </div>
@@ -244,7 +244,7 @@
   </section>
 
   <section class="advantage mt-10">
-    <div class="container mx-auto px-10">
+    <div class="container mx-auto px-4 sm:px-5 md:px-10 ">
       <h3 class="text-[25px] text-light mb-5 font-bold">
         Преимущества
       </h3>
@@ -275,11 +275,11 @@
   </section>
 
   <section class="price-univer mt-[60px]">
-    <div class="container mx-auto px-10">
+    <div class="container mx-auto px-2 sm:px-5 md:px-10">
       <h2 class="text-[25px] text-center font-bold">
         Требования и стоимость
       </h2>
-      <div class="price-wrap grid grid-cols-3 mt-10 gap-x-[30px] items-start justify-center">
+      <div class="price-wrap grid grid-cols-1 sm:grid-cols-2 gap-y-5 justify-center lg:gap-y-0 lg:grid-cols-3 mt-10 gap-x-[30px] items-start justify-center">
 
         <div class="price-item price-shadow col-span-1 only:col-span-3 h-full relative">
           <h3 class="price-title price-shadow text-[24px] font-bold text-[#181059] rounded-[8px] bg-white px-6 py-4">
@@ -612,7 +612,7 @@
 
 </main>
 
-c<section class="form mt-[100px] relative">
+<section class="form mt-[100px] relative">
   <div class="container mx-auto">
     <div class="form-inner py-[50px] md:py-[127px] relative z-10">
       <h2 class="title text-white text-[32px] sm:text-[40px] md:text-[50px] mb-[32px]">Остались вопросы, но нет ответов?</h2>
@@ -639,38 +639,57 @@ c<section class="form mt-[100px] relative">
   </div>
 </section>
 
-<footer class="footer mt-12">
-  <div class="container mx-auto">
+<footer class='footer mt-12'>
+  <div class='container mx-auto'>
 
-    <div class="footer-inner grid grid-cols-12 sm:gap-x-8 gap-y-5 xl:gap-x-12 md:gap-y-0">
-      <div id="footer-map"
-        class="footer-map order-2 col-span-12 h-[400px] md:order-2 md:h-[560px] md:col-span-8 gap-x-[65px] rounded-[20px] overflow-hidden">
+    <div class='footer-inner grid grid-cols-12 sm:gap-x-8 gap-y-5 xl:gap-x-12 md:gap-y-0'>
+      <div id='footer-map'
+           class='footer-map order-2 col-span-12 h-[400px] md:order-2 md:h-[560px] md:col-span-8 gap-x-[65px] rounded-[20px] overflow-hidden'>
 
       </div>
-      <div class="footer-filial order-1 col-span-12 md:order-2 md:col-span-4 ">
-        <h3 class="text-black text-[24px] font-bold mb-4">
+      <div class='footer-filial order-1 col-span-12 md:order-2 md:col-span-4 '>
+        <h3 class='text-black text-[24px] font-bold mb-4'>
           Филиалы
         </h3>
-        <ul class="grid gap-y-2">
-          <li data-address="улица Амира Темура, дом 107Б, Международный Бизнес Центр"
-            data-contacts="['+998 99 900 99 99', '+998 98 888 88 88']" data-longitude="41.26465"
-            data-latitude="69.21627"
-            class="filial-item active cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+        <ul class='grid gap-y-2'>
+          <li data-address='улица Амира Темура, дом 107Б, Международный Бизнес Центр'
+              data-contacts="['+998 99 900 99 99', '+998 98 888 88 88']" 
+              data-email="['info@universegroup.uz', 'info@universegroup.uz']"
+              data-workdays='<p>Пн-пт: 09:00-18:00</p>'
+              data-longitude='41.26465'
+              data-latitude='69.21627'
+              class='filial-item active cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2'
+          >
             Ташкент
           </li>
-          <li data-address="Самарканд" data-contacts="['+998 88 888 88 88', '+998 97 777 77 77']"
-            data-longitude="39.65417" data-latitude="66.95972"
-            class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+          <li data-address='Самарканд' 
+              data-contacts="['+998 88 888 88 88', '+998 97 777 77 77']"
+              data-email="['info@univer123213213segroup.uz', 'info@univer123213213segroup.uz']"
+              data-workdays='<p>Hell2112312312o world</p>'
+              data-longitude='39.65417' 
+              data-latitude='66.95972'
+              class='filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2'
+          >
             Самарканд
           </li>
-          <li data-address="Жиззах" data-contacts="['+998 11 111 11 11', '+998 22 222 22 22']" data-longitude="40.11583"
-            data-latitude="67.84222"
-            class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+          <li data-address='Жиззах' 
+              data-contacts="['+998 11 111 11 11', '+998 22 222 22 22']" 
+              data-email="['info@13213segroup.uz', 'info@13213segroup.uz']"
+              data-workdays='<p>H123123213</p>'
+              data-longitude='40.11583'
+              data-latitude='67.84222'
+              class='filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2'
+          >
             Жиззах
           </li>
-          <li data-address="Навоий" data-contacts="['+998 44 444 44 44', '+998 55 555 55 55']" data-longitude="40.08444"
-            data-latitude="65.37917"
-            class="filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2">
+          <li data-address='Навоий' 
+              data-contacts="['+998 44 444 44 44', '+998 55 555 55 55']" 
+              data-email="['info@13213segroup.uz', 'info@13213segroup.uz']"
+              data-workdays='<p>H123123213</p>'
+              data-longitude='40.08444'
+              data-latitude='65.37917'
+              class='filial-item cursor-pointer text-[20px] font-semibold w-full rounded-lg border border-[#65B500] py-2 px-2'
+          >
             Навоий
           </li>
         </ul>
@@ -678,74 +697,69 @@ c<section class="form mt-[100px] relative">
     </div>
 
 
-    <div class="footer-contact active grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 my-[70px] gap-y-5 gap-x-8" id='filial-1'>
+    <div class='footer-contact active grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 my-[70px] gap-y-5 gap-x-8'>
 
-      <div class="mail flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <polyline points="3 7 12 13 21 7" />
+      <div class='mail flex items-start gap-x-5'>
+        <div class='bg-[#f4f4f4] p-5 rounded-full'>
+          <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-mail' width='32' height='32'
+               viewBox='0 0 24 24' stroke-width='1.5' stroke='#5F5F5F' fill='none' stroke-linecap='round'
+               stroke-linejoin='round'>
+            <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+            <rect x='3' y='5' width='18' height='14' rx='2' />
+            <polyline points='3 7 12 13 21 7' />
           </svg>
         </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold mb-1">Почта :</span>
-          <a class="text-sm text-[##70798B]" href="mailto:info@universegroup.uz">info@universegroup.uz</a>
+        <div class='grid w-full'>
+          <span class='text-lg font-bold mb-1'>Почта :</span>
+          <span class="footer-email text-sm text-[#70798B]"></span>
         </div>
       </div>
 
-      <div class="location  flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="12" cy="11" r="3" />
-            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+      <div class='location  flex items-start gap-x-5'>
+        <div class='bg-[#f4f4f4] p-5 rounded-full'>
+          <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-map-pin' width='32' height='32'
+               viewBox='0 0 24 24' stroke-width='1.5' stroke='#5F5F5F' fill='none' stroke-linecap='round'
+               stroke-linejoin='round'>
+            <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+            <circle cx='12' cy='11' r='3' />
+            <path d='M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z' />
           </svg>
         </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Адрес :</span>
-          <span class="footer-address text-sm text-[#70798B]">улица Амира Темура, дом 107Б, Международный Бизнес
-            Центр</span>
+        <div class='grid w-full'>
+          <span class='text-lg font-bold'>Адрес :</span>
+          <span class='footer-address text-sm text-[#70798B]'></span>
         </div>
       </div>
 
-      <div class="working-hours flex items-start gap-x-5 ">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="12" cy="12" r="9" />
-            <polyline points="12 7 12 12 15 15" />
+      <div class='working-hours flex items-start gap-x-5 '>
+        <div class='bg-[#f4f4f4] p-5 rounded-full'>
+          <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-clock' width='32' height='32'
+               viewBox='0 0 24 24' stroke-width='1.5' stroke='#5F5F5F' fill='none' stroke-linecap='round'
+               stroke-linejoin='round'>
+            <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+            <circle cx='12' cy='12' r='9' />
+            <polyline points='12 7 12 12 15 15' />
           </svg>
         </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Часы работы :</span>
-          <span class="text-sm text-[##70798B]"> Пон-пят: 09:00 - 18:00 </span>
-          <span class="text-sm text-[##70798B]"> Суб-воск: отдых </span>
+        <div class='grid w-full'>
+          <span class='text-lg font-bold'>Часы работы :</span>
+          <span class='text-sm text-[#70798B] work-hour'></span>
         </div>
       </div>
 
-      <div class="contact flex items-start gap-x-5">
-        <div class="bg-[#f4f4f4] p-5 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5F5F5F" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <div class='contact flex items-start gap-x-5'>
+        <div class='bg-[#f4f4f4] p-5 rounded-full'>
+          <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-phone' width='32' height='32'
+               viewBox='0 0 24 24' stroke-width='1.5' stroke='#5F5F5F' fill='none' stroke-linecap='round'
+               stroke-linejoin='round'>
+            <path stroke='none' d='M0 0h24v24H0z' fill='none' />
             <path
-              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+              d='M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2' />
           </svg>
         </div>
-        <div class="grid w-full">
-          <span class="text-lg font-bold">Контакты :</span>
-          <span class="phone-numbers text-sm text-[#70798B] grid">
-            <a href="tel:+998999999999" class="inline-block">+998 99 999 99 99</a>
-            <a href="tel:+998888888888" class="inline-block">+998 88 888 88 88</a>
-          </span>
+        <div class='grid w-full'>
+          <span class='text-lg font-bold'>Контакты :</span>
+          <span class='phone-numbers text-sm text-[#70798B] grid'></span>
         </div>
       </div>
 
@@ -756,10 +770,10 @@ c<section class="form mt-[100px] relative">
 </footer>
 
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU"
-  type="text/javascript"></script>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="js/main.js?t=1641989859941"></script>
+<script src='https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU'
+        type='text/javascript'></script>
+<script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
+<script src='js/main.js?t=1642058840139'></script>
 
 </body>
 
