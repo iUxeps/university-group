@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1642058839986">
+  <link rel="stylesheet" href="css/main.css?t=1642401794942">
 </head>
 
 <body>
@@ -445,27 +445,27 @@
       <form action="" class="grid gap-y-4">
         <div>
           <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="text"
-            name="first_name" placeholder="Ваше имя">
+            name="first_name" placeholder="Ваше имя"  title="Только буквы" required>
         </div>
 
         <div>
           <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="text"
-            name="last_name" placeholder="Ваша фамилия">
+            name="last_name" placeholder="Ваша фамилия"  title="Только буквы" required>
         </div>
 
         <div>
           <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="tel"
-            name="phone" placeholder="Телефон">
+            name="phone" placeholder="Телефон" pattern="[0-9]+" title="Только цифры" required>
         </div>
 
         <div>
           <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="email"
-            name="email" placeholder="Почта">
+            name="email" placeholder="Почта" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
         </div>
 
         <div>
           <input class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]" type="number"
-            name="age" placeholder="Ваш возраст" min="16" max="95">
+            name="age" placeholder="Ваш возраст" min="16" max="95" pattern="[0-9]" required>
         </div>
 
         <button type="submit" class="btn text-white bg-[#61AE00]">
@@ -490,7 +490,7 @@
           type="text" name="name" placeholder="Имя">
         <input
           class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-5 pl-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
-          type="tel" name="phone" placeholder="Телефон">
+          type="tel" name="phone" placeholder="Телефон" pattern="[0-9]+" title="Только цифры">
         <div class="mx-auto col-span-12 xl:col-span-2">
           <button type="button" class="btn w-40 bg-white">
             Записаться
@@ -640,7 +640,7 @@
 <script src='https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU'
         type='text/javascript'></script>
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1642058839986'></script>
+<script src='js/main.js?t=1642401794942'></script>
 
 </body>
 
