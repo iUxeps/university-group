@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1643363770611">
+  <link rel="stylesheet" href="css/main.css?t=1643363770689">
 </head>
 
 <body>
@@ -230,7 +230,8 @@
 </header>
 
 
-<main class="country-page">
+
+<main class="inblog-page">
 
   <section class="home relative">
     <picture>
@@ -239,12 +240,8 @@
     <div class="home-inner pt-[150px] md:pt-[180px] sm:pt-[234px] relative z-50">
       <div class="home-content container mx-auto">
         <h1 class="title font-bold text-left text-[55px] text-white leading-[59px] max-w-[570px] z-10 relative">
-          Франция
+          Название Статьи
         </h1>
-        <p class="subtitle font-semibold text-2xl text-white max-w-[570px] mt-6 z-10 relative">
-          Universe Group поможет вам на каждом этапе поступления в престижный ВУЗ!
-          Спешите записаться на бесплатную консультацию
-        </p>
         <div class="home-btns z-10 relative font-semibold text-xl mt-7 relative flex gap-x-[30px] gap-y-7 flex-wrap justify-center sm:flex-nowrap sm:justify-start">
   <a href="#" class="btn w-40">Позвонить</a>
   <button class="btn w-40 modal-btn-open">Записаться</button>
@@ -253,248 +250,98 @@
     </div>
   </section>
 
-  <section class="about-country relative top-[-70px] left-0 right-0 z-50">
+  <section class="inblog-info relative top-[-70px] left-0 right-0 z-50">
     <div class="container mx-auto">
-      <div class="about-country-inner box-shadow px-2 sm:px-5 md:px-10 py-11 bg-white rounded-[12px]">
-        <h2 class="title text-center mb-3">Франция</h2>
+      <div class="inblog-info-inner box-shadow px-2 sm:px-5 md:px-10 py-11 bg-white rounded-[12px]">
         <p class="text-[#6F6F6F] text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum aliquam et sed ipsum euismod fusce mauris
           ornare fermentum. Tincidunt eu aenean aliquam interdum pellentesque lacinia purus. Duis velit, felis maecenas
           eget orci proin nulla euismod. Magna risus ut molestie ultrices arcu. Sociis at ornare lorem tortor diam. Et
-          aliquet nunc porttitor vitae. Enim, eget eu, in non dictum duis fermentum. Pulvinar volutpat mattis tellus sed
-          amet, adipiscing elementum. Sed egestas ac turpis at tempor. Vulputate suscipit tristique sem turpis dui sit
-          sagittis. Et magna urna ut sit nibh viverra pretium, penatibus. Bibendum tempor turpis dictum senectus integer
-          vulputate. Gravida imperdiet sagittis adipiscing a purus condimentum. Elit, sit ni bh ac dolor facilisi.
-          At in pretium amet, vulputate id cursus et amet dui. Dolor, nisl iaculis mauris pulvinar enim. Pretium duis
-          sit
-          eget mi in nunc. Eget eu ut facilisi blandit nunc egestas elit quis. Odio non consectetur curabitur vel. Sed
-          nunc, non curabitur eu nisi, porta eu. Quam donec consequat suspendisse dictumst. Erat vitae varius ultricies
-          mauris semper eget nisi, nam. Fermentum congue id eu, leo. Montes, sit dictum bibendum tortor elementum vel.
-          In nibh porta sodales amet, cras sed elit. Justo, diam venenatis lobortis egestas consequat tristique dui
-          massa
-          at. Vestibulum nec sit facilisi et cursus euismod. Lacus facilisis augue auctor pretium, curabitur maecenas.
-          Risus dui massa, amet, morbi ullamcorper. Id amet semper morbi nullam a et tortor. Non volutpat varius feugiat
-          nibh lorem consectetur et.
+          aliquet nunc porttitor vitae. Enim, eget eu, in non dictum duis fermentum.
         </p>
       </div>
     </div>
   </section>
 
-  <section class="university mb-10 sm:mb-[100px]">
-    <div class="container mx-auto">
-      <div class="university-inner box-shadow sm:px-5 xl:px-[52px] rounded-[12px] pb-[70px]">
-        <div class="title">
-          Университеты
+<section
+  class="modal-form fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-[#000000cc] z-[99999999] items-center justify-center"
+>
+  <div class="modal-inner relative">
+    <button class="modal-close-btn absolute right-0 -top-[50px]">
+      <picture>
+        <img src="img/close.png" alt="" />
+      </picture>
+    </button>
+    <div class="bg-white rounded-lg px-10 py-12">
+      <form action="" class="grid gap-y-4">
+        <div>
+          <input
+            class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]"
+            type="text"
+            name="first_name"
+            placeholder="Ваше имя"
+            title="Только буквы"
+            required
+          />
         </div>
-        <div class="university-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-11 sm:gap-x-9 gap-y-11">
-          <div class="university-item">
-            <picture>
-              <img class="rounded-[6px] h-[240px] w-full" src="img/univer.png" alt="aw">
-            </picture>
 
-            <div class="university-content relative -top-[50px] pt-7 px-6 pb-[50px] bg-white mx-4 rounded-[6px]">
-              <h3 class="university-title text-center font-bold text-[20px]">
-                Наименование Вуза
-              </h3>
-              <p class="university-descr text-[##828594] text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s
-              </p>
-              <a href="#"
-                class="bg-[#77B42B] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
-                Подробнее
-              </a>
-            </div>
-          </div>
-
-          <div class="university-item">
-            <picture>
-              <img class="rounded-[6px] h-[240px] w-full" src="img/univer.png" alt="aw">
-            </picture>
-
-            <div class="university-content relative -top-[50px] pt-7 px-6 pb-[50px] bg-white mx-4 rounded-[6px]">
-              <h3 class="university-title text-center font-bold text-[20px]">
-                Наименование Вуза
-              </h3>
-              <p class="university-descr text-[##828594] text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s
-              </p>
-              <a href="#"
-                class="bg-[#77B42B] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
-                Подробнее
-              </a>
-            </div>
-          </div>
-
-          <div class="university-item">
-            <picture>
-              <img class="rounded-[6px] h-[240px] w-full" src="img/univer.png" alt="aw">
-            </picture>
-
-            <div class="university-content relative -top-[50px] pt-7 px-6 pb-[50px] bg-white mx-4 rounded-[6px]">
-              <h3 class="university-title text-center font-bold text-[20px]">
-                Наименование Вуза
-              </h3>
-              <p class="university-descr text-[##828594] text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s
-              </p>
-              <a href="#"
-                class="bg-[#77B42B] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
-                Подробнее
-              </a>
-            </div>
-          </div>
-
-          <div class="university-item">
-            <picture>
-              <img class="rounded-[6px] h-[240px] w-full" src="img/univer.png" alt="aw">
-            </picture>
-
-            <div class="university-content relative -top-[50px] pt-7 px-6 pb-[50px] bg-white mx-4 rounded-[6px]">
-              <h3 class="university-title text-center font-bold text-[20px]">
-                Наименование Вуза
-              </h3>
-              <p class="university-descr text-[##828594] text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s
-              </p>
-              <a href="#"
-                class="bg-[#77B42B] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
-                Подробнее
-              </a>
-            </div>
-          </div>
-
-          <div class="university-item">
-            <picture>
-              <img class="rounded-[6px] h-[240px] w-full" src="img/univer.png" alt="aw">
-            </picture>
-
-            <div class="university-content relative -top-[50px] pt-7 px-6 pb-[50px] bg-white mx-4 rounded-[6px]">
-              <h3 class="university-title text-center font-bold text-[20px]">
-                Наименование Вуза
-              </h3>
-              <p class="university-descr text-[##828594] text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s
-              </p>
-              <a href="#"
-                class="bg-[#77B42B] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
-                Подробнее
-              </a>
-            </div>
-          </div>
-
-          <div class="university-item">
-            <picture>
-              <img class="rounded-[6px] h-[240px] w-full" src="img/univer.png" alt="aw">
-            </picture>
-
-            <div class="university-content relative -top-[50px] pt-7 px-6 pb-[50px] bg-white mx-4 rounded-[6px]">
-              <h3 class="university-title text-center font-bold text-[20px]">
-                Наименование Вуза
-              </h3>
-              <p class="university-descr text-[##828594] text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s
-              </p>
-              <a href="#"
-                class="bg-[#77B42B] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
-                Подробнее
-              </a>
-            </div>
-          </div>
-
-          <div class="university-item">
-            <picture>
-              <img class="rounded-[6px] h-[240px] w-full" src="img/univer.png" alt="aw">
-            </picture>
-
-            <div class="university-content relative -top-[50px] pt-7 px-6 pb-[50px] bg-white mx-4 rounded-[6px]">
-              <h3 class="university-title text-center font-bold text-[20px]">
-                Наименование Вуза
-              </h3>
-              <p class="university-descr text-[##828594] text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s
-              </p>
-              <a href="#"
-                class="bg-[#77B42B] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
-                Подробнее
-              </a>
-            </div>
-          </div>
-
-          <div class="university-item">
-            <picture>
-              <img class="rounded-[6px] h-[240px] w-full" src="img/univer.png" alt="aw">
-            </picture>
-
-            <div class="university-content relative -top-[50px] pt-7 px-6 pb-[50px] bg-white mx-4 rounded-[6px]">
-              <h3 class="university-title text-center font-bold text-[20px]">
-                Наименование Вуза
-              </h3>
-              <p class="university-descr text-[##828594] text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s
-              </p>
-              <a href="#"
-                class="bg-[#77B42B] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
-                Подробнее
-              </a>
-            </div>
-          </div>
-
-          <div class="university-item">
-            <picture>
-              <img class="rounded-[6px] h-[240px] w-full" src="img/univer.png" alt="aw">
-            </picture>
-
-            <div class="university-content relative -top-[50px] pt-7 px-6 pb-[50px] bg-white mx-4 rounded-[6px]">
-              <h3 class="university-title text-center font-bold text-[20px]">
-                Наименование Вуза
-              </h3>
-              <p class="university-descr text-[##828594] text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s
-              </p>
-              <a href="#"
-                class="bg-[#77B42B] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
-                Подробнее
-              </a>
-            </div>
-          </div>
+        <div>
+          <input
+            class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]"
+            type="text"
+            name="last_name"
+            placeholder="Ваша фамилия"
+            title="Только буквы"
+            required
+          />
         </div>
-      </div>
-      <div class="container mx-auto">
-        <div class="university-pagination mt-[53px] flex justify-center">
-          <ul class="pagination flex items-center gap-x-[10px] p-2 font-semibold bg-white flex-wrap justify-center gap-y-2">
-            <li class="border border-[#8B8B8B] rounded-[5px]">
-              <a class="pag-active w-[48px] h-[48px] flex items-center justify-center block" href="#">1</a>
-            </li>
-            <li class="border border-[#8B8B8B] rounded-[5px]">
-              <a class="w-[48px] h-[48px] flex items-center justify-center block" href="#">2</a>
-            </li>
-            <li class="border border-[#8B8B8B] rounded-[5px]">
-              <a class="w-[48px] h-[48px] flex items-center justify-center block" href="#">3</a>
-            </li>
-            <li class="border border-[#8B8B8B] rounded-[5px]">
-              <a class="w-[48px] h-[48px] flex items-center justify-center block" href="#">4</a>
-            </li>
-            <li class="border border-[#8B8B8B] rounded-[5px]">
-              <a class="w-[48px] h-[48px] flex items-center justify-center block" href="#">...</a>
-            </li>
-            <li class="border border-[#8B8B8B] rounded-[5px]">
-              <a class="w-[48px] h-[48px] flex items-center justify-center block" href="#">12</a>
-            </li>
-          </ul>
+
+        <div>
+          <input
+            class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]"
+            type="tel"
+            name="phone"
+            placeholder="Телефон"
+            pattern="[0-9]+"
+            title="Только цифры"
+            required
+          />
         </div>
-      </div>
+
+        <div>
+          <input
+            class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]"
+            type="email"
+            name="email"
+            placeholder="Почта"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+        </div>
+
+        <div>
+          <input
+            class="outline-none border-2 border-[#65B500] w-[300px] px-3 py-2 rounded-[6px]"
+            type="number"
+            name="age"
+            placeholder="Ваш возраст"
+            min="16"
+            max="95"
+            pattern="[0-9]"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn text-white bg-[#61AE00]">
+          Отправить
+        </button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
+
+
 </main>
+
 
 <section class="form relative">
   <div class="container mx-auto">
@@ -656,7 +503,7 @@
 <script src='https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU'
         type='text/javascript'></script>
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1643363770611'></script>
+<script src='js/main.js?t=1643363770689'></script>
 
 </body>
 
