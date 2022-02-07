@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1644223394509">
+  <link rel="stylesheet" href="css/main.css?t=1644235832638">
 </head>
 
 <body>
@@ -18,7 +18,8 @@
     tailwind.config = {
       theme: {
         screens: {
-          'micro': '350px',
+          'micro': '290px',
+          'mini': '350px',
           'sm': '641px',
           'md': '776px',
           'pad': '800px',
@@ -273,7 +274,13 @@
         <p class="subtitle font-semibold text-2xl text-white max-w-[570px] mt-6 z-10 relative">
           Сторс, штат Коннектикут, США
         </p>
-        <div class="z-10 relative font-bold text-xl mt-8">
+
+        <div class="home-btns z-10 relative font-semibold text-xl mt-7 relative flex gap-x-4 sm:gap-x-[30px] gap-y-5 justify-center flex-wrap micro:flex-nowrap sm:justify-start">
+  <a href="#" class="btn rounded-full sm:rounded-[9px] outline-1 outline outline-white outline-offset-4">Позвонить</a>
+  <button class="btn modal-btn-open rounded-full sm:rounded-[9px] outline-1 outline outline-white outline-offset-4">Записаться</button>
+</div>
+
+        <!-- <div class="z-10 relative font-bold text-xl mt-8">
           <div class="py-[18px] px-5 bg-white rounded-[10px] max-w-[467px] ">
             Программа:
             <span class="text-[#417201]">
@@ -286,19 +293,19 @@
               49448 $
             </span>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
 
-  <section class="about-univer relative top-[-30px] sm:top-[-70px] left-0 right-0  z-50">
+  <section class="about-univer relative sm:top-[-300px] sm:mb-[-200px] left-0 right-0 z-50">
     <div class="container mx-auto relative">
       <div class="about-univer-inner px-3 sm:px-5 md:px-10 pt-11 bg-white rounded-[12px]">
         <h2 class="text-[25px] text-light mb-5 font-bold">
           University of Connecticut
         </h2>
 
-        <p class="text-[#6F6F6F] text-base">
+        <p class="text-[#6F6F6F] text-lg">
           University of Connecticut — основанный в 1881 году, располагается в городе Сторс, штат Коннектикут, США.
           Данный университет является tier-1 научным государственным учебным заведением в Америке. Образование в
           Соединенных Штатах Америки имеет множество преимуществ, с чем мы ознакомим Вас в данной статье.
@@ -353,16 +360,16 @@
         Преимущества
       </h3>
       <ul class="mt-5 list-disc	pl-5">
-        <li class="text-[#6F6F6F] text-base mb-2">
+        <li class="text-[#6F6F6F] text-lg mb-2">
           Помощь в поступлении на выбранную программу: Foundation, бакалавриат, магистратуру или MBA;
         </li>
-        <li class="text-[#6F6F6F] text-base mb-2">
+        <li class="text-[#6F6F6F] text-lg mb-2">
           Помощь в поступлении на выбранную программу: Foundation, бакалавриат, магистратуру или MBA;
         </li>
-        <li class="text-[#6F6F6F] text-base mb-2">
+        <li class="text-[#6F6F6F] text-lg mb-2">
           Помощь в поступлении на выбранную программу: Foundation, бакалавриат, магистратуру или MBA;
         </li>
-        <li class="text-[#6F6F6F] text-base mb-2">
+        <li class="text-[#6F6F6F] text-lg mb-2">
           Помощь в поступлении на выбранную программу: Foundation, бакалавриат, магистратуру или MBA;
         </li>
       </ul>
@@ -391,20 +398,20 @@
           <div class="price-content px-6 pt-4 pb-8">
             <div class="flex items-start justify-between mb-7">
               <div class="price">
-                <div class=" text-base font-semibold mb-1"> Стоимость от </div>
+                <div class=" text-lg font-semibold mb-1"> Стоимость от </div>
                 <div class="text-[25px] font-bold text-black">54000$</div>
               </div>
               <div class="age">
-                <div class=" text-base font-semibold mb-1">Возраст от</div>
+                <div class=" text-lg font-semibold mb-1">Возраст от</div>
                 <div class="text-[25px] font-bold text-black">18 лет</div>
               </div>
             </div>
 
             <div class="entry-requir mb-[100px]">
-              <h4 class="price-title price-shadow text-base font-semibold text-[#181059] mb-2">
+              <h4 class="price-title price-shadow text-xl font-semibold text-[#181059] mb-2">
                 Вступительные требования
               </h4>
-              <ul class="grid gap-y-1">
+              <ul class="grid gap-y-1 text-lg">
                 <li class="entry-list items-center gap-x-2">
                   Аттестат средней школы
                 </li>
@@ -442,17 +449,17 @@
           <div class="price-content px-6 pt-4 pb-8 ">
             <div class="flex items-start justify-between mb-7 ">
               <div class="price">
-                <div class=" text-base font-semibold mb-1"> Стоимость от </div>
+                <div class=" text-lg font-semibold mb-1"> Стоимость от </div>
                 <div class="text-[25px] font-bold text-black">54000$</div>
               </div>
               <div class="age">
-                <div class=" text-base font-semibold mb-1">Возраст от</div>
+                <div class=" text-lg font-semibold mb-1">Возраст от</div>
                 <div class="text-[25px] font-bold text-black">18 лет</div>
               </div>
             </div>
 
             <div class="entry-requir mb-[100px]">
-              <h4 class="price-title price-shadow text-base font-semibold text-[#181059] mb-2">
+              <h4 class="price-title price-shadow text-lg font-semibold text-[#181059] mb-2">
                 Вступительные требования
               </h4>
               <ul class="grid gap-y-1">
@@ -487,17 +494,17 @@
           <div class="price-content px-6 pt-4 pb-8 ">
             <div class="flex items-start justify-between mb-7 ">
               <div class="price">
-                <div class=" text-base font-semibold mb-1"> Стоимость от </div>
+                <div class=" text-lg font-semibold mb-1"> Стоимость от </div>
                 <div class="text-[25px] font-bold text-black">54000$</div>
               </div>
               <div class="age">
-                <div class=" text-base font-semibold mb-1">Возраст от</div>
+                <div class=" text-lg font-semibold mb-1">Возраст от</div>
                 <div class="text-[25px] font-bold text-black">18 лет</div>
               </div>
             </div>
 
             <div class="entry-requir mb-[100px]">
-              <h4 class="price-title price-shadow text-base font-semibold text-[#181059] mb-2">
+              <h4 class="price-title price-shadow text-lg font-semibold text-[#181059] mb-2">
                 Вступительные требования
               </h4>
               <ul class="grid gap-y-1">
@@ -552,7 +559,7 @@
                   Англия, графство Оксфордшир
                 </p>
                 <a href="#"
-                  class="bg-[#65B500] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
+                  class="bg-[#65B500] hover:bg-[#417201] text-lg text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
                   Подробнее
                 </a>
               </div>
@@ -573,7 +580,7 @@
                   Англия, графство Оксфордшир
                 </p>
                 <a href="#"
-                  class="bg-[#65B500] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
+                  class="bg-[#65B500] hover:bg-[#417201] text-lg text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
                   Подробнее
                 </a>
               </div>
@@ -594,7 +601,7 @@
                   Англия, графство Оксфордшир
                 </p>
                 <a href="#"
-                  class="bg-[#65B500] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
+                  class="bg-[#65B500] hover:bg-[#417201] text-lg text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
                   Подробнее
                 </a>
               </div>
@@ -615,7 +622,7 @@
                   Англия, графство Оксфордшир
                 </p>
                 <a href="#"
-                  class="bg-[#65B500] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
+                  class="bg-[#65B500] hover:bg-[#417201] text-lg text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
                   Подробнее
                 </a>
               </div>
@@ -636,7 +643,7 @@
                   Англия, графство Оксфордшир
                 </p>
                 <a href="#"
-                  class="bg-[#65B500] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
+                  class="bg-[#65B500] hover:bg-[#417201] text-lg text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
                   Подробнее
                 </a>
               </div>
@@ -657,7 +664,7 @@
                   Англия, графство Оксфордшир
                 </p>
                 <a href="#"
-                  class="bg-[#65B500] hover:bg-[#417201] text-base text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
+                  class="bg-[#65B500] hover:bg-[#417201] text-lg text-white py-3 px-[42px] rounded absolute -bottom-[24px] w-[170px] mx-auto left-0 right-0">
                   Подробнее
                 </a>
               </div>
@@ -753,19 +760,19 @@
 <section class="form relative">
   <div class="container mx-auto">
     <div class="form-inner py-[50px] md:py-[127px] relative z-10">
-      <h2 class="title text-white text-[32px] sm:text-[40px] md:text-[50px] mb-[32px]">Остались <span class="text-[#65B500]">вопросы</span>, но нет ответов?</h2>
+      <h2 class="title text-white text-[32px] font-medium sm:text-[40px] md:text-[50px] mb-[32px]">Остались <span class="text-[#65B500]">вопросы</span>, но нет ответов?</h2>
       <form action=""
         class="grid grid-cols-12 sm:gap-x-3 items-center justify-between flex-wrap gap-y-4 xl:gap-y-0 px-5 sm:px-0">
         <input
-          class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-3 sm:py-4 px-2 micro:px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
+          class="w-full font-medium  col-span-12 sm:col-span-6 xl:col-span-5 py-3 sm:py-4 px-2 mini:px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
           type="text" name="name" placeholder="Имя">
         <input
-          class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-3 sm:py-4 px-2 micro:px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
+          class="w-full font-medium  col-span-12 sm:col-span-6 xl:col-span-5 py-3 sm:py-4 px-2 mini:px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
           type="tel" name="phone" placeholder="Телефон" pattern="[0-9]+" title="Только цифры">
         <div class="mx-auto col-span-12 xl:col-span-2">
           <button type="submit" class="btn w-40 bg-[#65B500] text-white">
             Записаться
-          </button> 
+          </button>
         </div>
       </form>
       <div class="text-[24px] md:text-[30px] font-bold text-white text-center mt-[20px]">
@@ -782,7 +789,7 @@
 
 <footer class='footer'>
   <div class='bg-[#65B500] sm:bg-white'>
-    <div class='pt-12 pb-8 container mx-auto'>
+    <div class='pt-12 pb-8 sm:container mx-auto'>
 
       <div class='footer-inner grid grid-cols-12 sm:gap-x-4 gap-y-8 xl:gap-x-12 md:gap-y-0 px-0'>
         <div id='footer-map'
@@ -792,14 +799,14 @@
           <h3 class='text-white sm:text-black text-center sm:text-left text-[24px] font-bold mb-4'>
             Филиалы
           </h3>
-          <ul class='filial-list grid gap-x-4 gap-y-4 sm:gap-y-2'>
+          <ul class='filial-list grid grid-cols-1 mini:grid-cols-2 md:grid-cols-1 gap-x-4 gap-y-4 sm:gap-y-2'>
             <li data-address='улица Амира Темура, дом 107Б, Международный Бизнес Центр'
                 data-contacts="['+998 99 900 99 99', '+998 98 888 88 88']"
                 data-email="['info@universegroup.uz', 'info@universegroup.uz']"
                 data-workdays='<p>Пн-пт: 09:00-18:00</p>'
                 data-longitude='41.26465'
                 data-latitude='69.21627'
-                class='filial-item active text-white hover:text-[#61AE00] sm:text-black hover:bg-white cursor-pointer text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
+                class='filial-item active text-white hover:text-[#61AE00] sm:text-black hover:bg-white cursor-pointer text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 mini:px-2'
             >
               Ташкент
             </li>
@@ -809,7 +816,7 @@
                 data-workdays='<p>Hell2112312312o world</p>'
                 data-longitude='39.65417'
                 data-latitude='66.95972'
-                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
+                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 mini:px-2'
             >
               Самарканд
             </li>
@@ -819,7 +826,7 @@
                 data-workdays='<p>H123123213</p>'
                 data-longitude='40.11583'
                 data-latitude='67.84222'
-                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
+                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 mini:px-2'
             >
               Жиззах
             </li>
@@ -829,7 +836,7 @@
                 data-workdays='<p>H123123213</p>'
                 data-longitude='40.08444'
                 data-latitude='65.37917'
-                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
+                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 mini:px-2'
                 >
                 Навоий
               </li>
@@ -853,7 +860,7 @@
       </div>
       <div class='grid w-full'>
         <span class='text-lg font-bold mb-1'>Почта :</span>
-        <span class="footer-email text-base text-[#70798B] grid"></span>
+        <span class="footer-email text-base font-medium text-[#70798B] grid"></span>
       </div>
     </div>
 
@@ -869,7 +876,7 @@
       </div>
       <div class='grid w-full'>
         <span class='text-lg font-bold'>Адрес :</span>
-        <span class='footer-address text-base text-[#70798B]'></span>
+        <span class='footer-address text-base font-medium text-[#70798B]'></span>
       </div>
     </div>
 
@@ -885,7 +892,7 @@
       </div>
       <div class='grid w-full'>
         <span class='text-lg font-bold'>Часы работы :</span>
-        <span class='text-base text-[#70798B] work-hour'></span>
+        <span class='text-base text-[#70798B] font-medium work-hour'></span>
       </div>
     </div>
 
@@ -901,7 +908,7 @@
       </div>
       <div class='grid w-full'>
         <span class='text-lg font-bold'>Контакты :</span>
-        <span class='phone-numbers text-base text-[#70798B] grid'></span>
+        <span class='phone-numbers text-base font-medium text-[#70798B] grid'></span>
       </div>
     </div>
 
@@ -913,7 +920,7 @@
 <script src='https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU'
         type='text/javascript'></script>
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1644223394509'></script>
+<script src='js/main.js?t=1644235832638'></script>
 
 </body>
 

@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1644223394477">
+  <link rel="stylesheet" href="css/main.css?t=1644235832632">
 </head>
 
 <body>
@@ -18,7 +18,8 @@
     tailwind.config = {
       theme: {
         screens: {
-          'micro': '350px',
+          'micro': '290px',
+          'mini': '350px',
           'sm': '641px',
           'md': '776px',
           'pad': '800px',
@@ -281,7 +282,7 @@
           ВУЗ! Спешите записаться на бесплатную консультацию
         </p>
 
-        <div class="home-btns z-10 relative font-semibold text-xl mt-7 relative flex gap-x-4 sm:gap-x-[30px] gap-y-5 justify-center sm:flex-nowrap sm:justify-start">
+        <div class="home-btns z-10 relative font-semibold text-xl mt-7 relative flex gap-x-4 sm:gap-x-[30px] gap-y-5 justify-center flex-wrap micro:flex-nowrap sm:justify-start">
   <a href="#" class="btn rounded-full sm:rounded-[9px] outline-1 outline outline-white outline-offset-4">Позвонить</a>
   <button class="btn modal-btn-open rounded-full sm:rounded-[9px] outline-1 outline outline-white outline-offset-4">Записаться</button>
 </div>
@@ -289,12 +290,12 @@
     </div>
   </section>
 
-  <section class="catalog relative top-[-70px] left-0 right-0 z-50 mb-[50px]">
+  <section class="catalog relative sm:top-[-300px] sm:mb-[-200px] left-0 right-0 z-50 mb-[50px]">
     <div
       class="container mx-auto bg-white rounded-[12px] px-2 sm:px-5 md:px-12 py-10 shadow-3xl"
     >
       <div class="catalog-inner">
-        <p class="text-[#828594] text-base">
+        <p class="text-[#828594] text-lg font-medium px-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu enim a
           pulvinar orci. Scelerisque elit eget justo, et nunc tincidunt et,
           tempus metus. Amet, vulputate hac imperdiet congue quis ac a cursus
@@ -311,12 +312,12 @@
         <div>
           <form
             action=""
-            class="filter mt-[18px] mb-[36px] relative flex items-center justify-center gap-x-0 lg:justify-start lg:gap-x-20 gap-y-5 flex-wrap lg:flex-nowrap lg:gap-y-0"
+            class="filter mt-[18px] mb-[36px] relative flex items-center justify-center gap-x-20 lg:justify-start lg:gap-x-20 gap-y-5 flex-wrap lg:flex-nowrap lg:gap-y-0"
           >
             <div class="select-country order-2 sm:order-1">
               <select
                 placeholder="Страна"
-                class="cursor-pointer text-[#737373] text-base outline-none pl-5 pr-[180px] py-4 bg-[#F9F9F9] border-[0.5px] border-[#E6E6E6] rounded-[6px]"
+                class="cursor-pointer text-[#737373] text-lg outline-none pl-3 mini:pl-5 pr-[100px] mini:pr-[180px] py-4 bg-[#F9F9F9] border-[0.5px] border-[#E6E6E6] rounded-[6px]"
               >
                 <option selected>Все страны</option>
                 <option>Пункт 2</option>
@@ -334,7 +335,7 @@
                   <input type="number" class="input-min" value="2500" />
                 </div>
               </div>
-              <div class="w-[275px] order-3 sm:order-2">
+              <div class="w-[230px] mini:w-[275px] order-3 sm:order-2">
                 <div class="slider">
                   <div class="progress"></div>
                 </div>
@@ -367,8 +368,9 @@
         </div>
 
         <div class="university-wrap grid gap-y-6">
-          <div class="univer-item grid grid-cols-12 gap-x-2 gap-x-0 lg:gap-x-5">
-            <div class="country-img hidden lg:col-span-4 lg:block">
+
+          <div class="univer-item grid grid-cols-12 gap-x-5 px-4 py-4 bg-white">
+            <div class="country-img col-span-12 sm:col-span-5 lg:col-span-4">
               <picture>
                 <img
                   class="w-full h-full rounded-[10px]"
@@ -377,10 +379,10 @@
                 />
               </picture>
             </div>
-            <div
-              class="item-content relative bg-white col-span-12 lg:col-span-8 h-full px-3 sm:px-7 py-[50px] rounded-[10px] grid grid-cols-12 sm:gap-x-5 items-end relative"
+
+            <div class="item-content relative bg-white col-span-12 sm:col-span-7 lg:col-span-8 h-full px-3 sm:px-7 py-6 sm:py-[50px] rounded-[10px]"
             >
-              <div class="item-left col-span-12 sm:col-span-6 relative h-full">
+              <div class="item-left">
                 <div class="item-title text-[24px] font-bold after:mt-3">
                   Harvard University
                 </div>
@@ -388,55 +390,19 @@
                   США, штат Массачусетс
                 </div>
               </div>
-              <div class="item-right col-span-12 sm:col-span-6">
-                <div class="univer-info text-base font-semibold grid gap-y-7">
-                  <div class="univer-program">
-                    <p class="pb-[10px] text-base text-[#8A8A8A]">Программа</p>
-                    <div
-                      class="p-2 border border-[#D5D5DC] rounded-[6px] flex gap-x-4 items-center text-lg"
-                    >
-                      <picture>
-                        <img
-                          class="w-[38px] h-[38px]"
-                          src="img/univer-prog.png"
-                          alt=""
-                        />
-                      </picture>
-                      <div>Бакалавриат, Магистратура</div>
-                    </div>
-                  </div>
 
-                  <div class="univer-price">
-                    <p class="pb-[10px] text-base text-[#8A8A8A]">
-                      Стоимость за год от
-                    </p>
-                    <div
-                      class="p-2 border border-[#D5D5DC] rounded-[6px] flex gap-x-4 items-center text-lg"
-                    >
-                      <picture>
-                        <img
-                          class="w-[38px] h-[38px]"
-                          src="img/univer-price.png"
-                          alt=""
-                        />
-                      </picture>
-                      <div>49448 $</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="">
                 <a
                   href="#"
-                  class="inline-block mt-5 sm:m-0 sm:absolute bottom-[55px] btn text-white text-xl bg-[#5BA400] py-3 rounded-[5px]"
+                  class="inline-block mt-5 btn text-white text-xl bg-[#65B500] py-3 rounded-[5px]"
                   >Подробнее</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="univer-item grid grid-cols-12 gap-x-2 gap-x-0 lg:gap-x-5">
-            <div class="country-img hidden lg:col-span-4 lg:block">
+          <div class="univer-item grid grid-cols-12 gap-x-5 px-4 py-4 bg-white">
+            <div class="country-img col-span-12 sm:col-span-5 lg:col-span-4">
               <picture>
                 <img
                   class="w-full h-full rounded-[10px]"
@@ -445,10 +411,10 @@
                 />
               </picture>
             </div>
-            <div
-              class="item-content relative bg-white col-span-12 lg:col-span-8 h-full px-3 sm:px-7 py-[50px] rounded-[10px] grid grid-cols-12 sm:gap-x-5 items-end relative"
+
+            <div class="item-content relative bg-white col-span-12 sm:col-span-7 lg:col-span-8 h-full px-3 sm:px-7 py-6 sm:py-[50px] rounded-[10px]"
             >
-              <div class="item-left col-span-12 sm:col-span-6 relative h-full">
+              <div class="item-left">
                 <div class="item-title text-[24px] font-bold after:mt-3">
                   Harvard University
                 </div>
@@ -456,120 +422,17 @@
                   США, штат Массачусетс
                 </div>
               </div>
-              <div class="item-right col-span-12 sm:col-span-6">
-                <div class="univer-info text-base font-semibold grid gap-y-7">
-                  <div class="univer-program">
-                    <p class="pb-[10px] text-base text-[#8A8A8A]">Программа</p>
-                    <div
-                      class="p-2 border border-[#D5D5DC] rounded-[6px] flex gap-x-4 items-center text-lg"
-                    >
-                      <picture>
-                        <img
-                          class="w-[38px] h-[38px]"
-                          src="img/univer-prog.png"
-                          alt=""
-                        />
-                      </picture>
-                      <div>Бакалавриат, Магистратура</div>
-                    </div>
-                  </div>
 
-                  <div class="univer-price">
-                    <p class="pb-[10px] text-base text-[#8A8A8A]">
-                      Стоимость за год от
-                    </p>
-                    <div
-                      class="p-2 border border-[#D5D5DC] rounded-[6px] flex gap-x-4 items-center text-lg"
-                    >
-                      <picture>
-                        <img
-                          class="w-[38px] h-[38px]"
-                          src="img/univer-price.png"
-                          alt=""
-                        />
-                      </picture>
-                      <div>49448 $</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="">
                 <a
                   href="#"
-                  class="inline-block mt-5 sm:m-0 sm:absolute bottom-[55px] btn text-white text-xl bg-[#5BA400] py-3 rounded-[5px]"
+                  class="inline-block mt-5 btn text-white text-xl bg-[#65B500] py-3 rounded-[5px]"
                   >Подробнее</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="univer-item grid grid-cols-12 gap-x-2 gap-x-0 lg:gap-x-5">
-            <div class="country-img hidden lg:col-span-4 lg:block">
-              <picture>
-                <img
-                  class="w-full h-full rounded-[10px]"
-                  src="img/country1.png"
-                  alt="count"
-                />
-              </picture>
-            </div>
-            <div
-              class="item-content relative bg-white col-span-12 lg:col-span-8 h-full px-3 sm:px-7 py-[50px] rounded-[10px] grid grid-cols-12 sm:gap-x-5 items-end relative"
-            >
-              <div class="item-left col-span-12 sm:col-span-6 relative h-full">
-                <div class="item-title text-[24px] font-bold after:mt-3">
-                  Harvard University
-                </div>
-                <div class="univer-locat text-[#828594] mt-4 text-base">
-                  США, штат Массачусетс
-                </div>
-              </div>
-              <div class="item-right col-span-12 sm:col-span-6">
-                <div class="univer-info text-base font-semibold grid gap-y-7">
-                  <div class="univer-program">
-                    <p class="pb-[10px] text-base text-[#8A8A8A]">Программа</p>
-                    <div
-                      class="p-2 border border-[#D5D5DC] rounded-[6px] flex gap-x-4 items-center text-lg"
-                    >
-                      <picture>
-                        <img
-                          class="w-[38px] h-[38px]"
-                          src="img/univer-prog.png"
-                          alt=""
-                        />
-                      </picture>
-                      <div>Бакалавриат, Магистратура</div>
-                    </div>
-                  </div>
-
-                  <div class="univer-price">
-                    <p class="pb-[10px] text-base text-[#8A8A8A]">
-                      Стоимость за год от
-                    </p>
-                    <div
-                      class="p-2 border border-[#D5D5DC] rounded-[6px] flex gap-x-4 items-center text-lg"
-                    >
-                      <picture>
-                        <img
-                          class="w-[38px] h-[38px]"
-                          src="img/univer-price.png"
-                          alt=""
-                        />
-                      </picture>
-                      <div>49448 $</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <a
-                  href="#"
-                  class="inline-block mt-5 sm:m-0 sm:absolute bottom-[55px] btn text-white text-xl bg-[#5BA400] py-3 rounded-[5px]"
-                  >Подробнее</a
-                >
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -706,19 +569,19 @@
 <section class="form relative">
   <div class="container mx-auto">
     <div class="form-inner py-[50px] md:py-[127px] relative z-10">
-      <h2 class="title text-white text-[32px] sm:text-[40px] md:text-[50px] mb-[32px]">Остались <span class="text-[#65B500]">вопросы</span>, но нет ответов?</h2>
+      <h2 class="title text-white text-[32px] font-medium sm:text-[40px] md:text-[50px] mb-[32px]">Остались <span class="text-[#65B500]">вопросы</span>, но нет ответов?</h2>
       <form action=""
         class="grid grid-cols-12 sm:gap-x-3 items-center justify-between flex-wrap gap-y-4 xl:gap-y-0 px-5 sm:px-0">
         <input
-          class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-3 sm:py-4 px-2 micro:px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
+          class="w-full font-medium  col-span-12 sm:col-span-6 xl:col-span-5 py-3 sm:py-4 px-2 mini:px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
           type="text" name="name" placeholder="Имя">
         <input
-          class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-3 sm:py-4 px-2 micro:px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
+          class="w-full font-medium  col-span-12 sm:col-span-6 xl:col-span-5 py-3 sm:py-4 px-2 mini:px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
           type="tel" name="phone" placeholder="Телефон" pattern="[0-9]+" title="Только цифры">
         <div class="mx-auto col-span-12 xl:col-span-2">
           <button type="submit" class="btn w-40 bg-[#65B500] text-white">
             Записаться
-          </button> 
+          </button>
         </div>
       </form>
       <div class="text-[24px] md:text-[30px] font-bold text-white text-center mt-[20px]">
@@ -735,7 +598,7 @@
 
 <footer class='footer'>
   <div class='bg-[#65B500] sm:bg-white'>
-    <div class='pt-12 pb-8 container mx-auto'>
+    <div class='pt-12 pb-8 sm:container mx-auto'>
 
       <div class='footer-inner grid grid-cols-12 sm:gap-x-4 gap-y-8 xl:gap-x-12 md:gap-y-0 px-0'>
         <div id='footer-map'
@@ -745,14 +608,14 @@
           <h3 class='text-white sm:text-black text-center sm:text-left text-[24px] font-bold mb-4'>
             Филиалы
           </h3>
-          <ul class='filial-list grid gap-x-4 gap-y-4 sm:gap-y-2'>
+          <ul class='filial-list grid grid-cols-1 mini:grid-cols-2 md:grid-cols-1 gap-x-4 gap-y-4 sm:gap-y-2'>
             <li data-address='улица Амира Темура, дом 107Б, Международный Бизнес Центр'
                 data-contacts="['+998 99 900 99 99', '+998 98 888 88 88']"
                 data-email="['info@universegroup.uz', 'info@universegroup.uz']"
                 data-workdays='<p>Пн-пт: 09:00-18:00</p>'
                 data-longitude='41.26465'
                 data-latitude='69.21627'
-                class='filial-item active text-white hover:text-[#61AE00] sm:text-black hover:bg-white cursor-pointer text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
+                class='filial-item active text-white hover:text-[#61AE00] sm:text-black hover:bg-white cursor-pointer text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 mini:px-2'
             >
               Ташкент
             </li>
@@ -762,7 +625,7 @@
                 data-workdays='<p>Hell2112312312o world</p>'
                 data-longitude='39.65417'
                 data-latitude='66.95972'
-                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
+                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 mini:px-2'
             >
               Самарканд
             </li>
@@ -772,7 +635,7 @@
                 data-workdays='<p>H123123213</p>'
                 data-longitude='40.11583'
                 data-latitude='67.84222'
-                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
+                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 mini:px-2'
             >
               Жиззах
             </li>
@@ -782,7 +645,7 @@
                 data-workdays='<p>H123123213</p>'
                 data-longitude='40.08444'
                 data-latitude='65.37917'
-                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
+                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 mini:px-2'
                 >
                 Навоий
               </li>
@@ -806,7 +669,7 @@
       </div>
       <div class='grid w-full'>
         <span class='text-lg font-bold mb-1'>Почта :</span>
-        <span class="footer-email text-base text-[#70798B] grid"></span>
+        <span class="footer-email text-base font-medium text-[#70798B] grid"></span>
       </div>
     </div>
 
@@ -822,7 +685,7 @@
       </div>
       <div class='grid w-full'>
         <span class='text-lg font-bold'>Адрес :</span>
-        <span class='footer-address text-base text-[#70798B]'></span>
+        <span class='footer-address text-base font-medium text-[#70798B]'></span>
       </div>
     </div>
 
@@ -838,7 +701,7 @@
       </div>
       <div class='grid w-full'>
         <span class='text-lg font-bold'>Часы работы :</span>
-        <span class='text-base text-[#70798B] work-hour'></span>
+        <span class='text-base text-[#70798B] font-medium work-hour'></span>
       </div>
     </div>
 
@@ -854,7 +717,7 @@
       </div>
       <div class='grid w-full'>
         <span class='text-lg font-bold'>Контакты :</span>
-        <span class='phone-numbers text-base text-[#70798B] grid'></span>
+        <span class='phone-numbers text-base font-medium text-[#70798B] grid'></span>
       </div>
     </div>
 
@@ -866,7 +729,7 @@
 <script src='https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU'
         type='text/javascript'></script>
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1644223394477'></script>
+<script src='js/main.js?t=1644235832632'></script>
 
 </body>
 
