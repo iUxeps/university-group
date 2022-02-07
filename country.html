@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1643614236699">
+  <link rel="stylesheet" href="css/main.css?t=1644223394405">
 </head>
 
 <body>
@@ -18,20 +18,27 @@
     tailwind.config = {
       theme: {
         screens: {
-      'sm': '640px',
-      'md': '776px',
-      'lg': '1030px',
-      'xl': '1290px',
-    },
+          'micro': '350px',
+          'sm': '641px',
+          'md': '776px',
+          'pad': '800px',
+          'lg': '1030px',
+          'xl': '1290px',
+        },
+        extend: {
+          boxShadow: {
+            '3xl': '0 114px 94px rgba(0, 0, 0, 0.1)',
+          }
+        }
       }
     }
   </script>
 <header class="header absolute top-0 left-0 z-[999999] right-0">
   <div class="container mx-auto">
     <nav class="nav flex justify-between items-center">
-      <div class="logo">
+      <div class="logo hidden sm:block">
         <a href="#">
-          <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[140px]" src="img/logo.png" alt="logo" /></picture>
+          <picture><source srcset="img/logo-light.webp" type="image/webp"><img class="w-[140px]" src="img/logo-light.png" alt="logo" /></picture>
         </a>
       </div>
       <div class="nav-menu flex justify-between items-center gap-x-[50px] xl:gap-x-[100px]"
@@ -106,59 +113,66 @@
           </li>
         </ul>
       </div>
-      <div class="switch-lang text-white relative">
-        <div class="lang">
-          <button
-            class="flex items-center gap-x-2 py-2 px-2 bg-[#61AE00] rounded-[10px]"
-          >
-            <picture>
-              <img class="" src="img/ru.png" alt="" />
-            </picture>
-            <span> Рус </span>
-          </button>
-          <div
-            class="lang-dropdown absolute top-[50px] bg-[#61AE00] rounded-[5px] overflow-hidden w-[100px]"
-          >
-            <a
-              href="#"
-              class="flex gap-x-2 w-full items-center py-2 px-3 hover:bg-[#61DA10]"
+      <div class="flex gap-x-10 items-center w-full sm:w-min justify-between sm:justify-center ">
+        <div class="switch-lang text-white relative">
+          <div class="lang">
+            <button
+              class="flex items-center gap-x-2 py-2 px-2 bg-[#61AE00] rounded-[10px]"
             >
               <picture>
-                <img src="img/en.png" alt="" />
+                <img class="min-w-[28px]" src="img/ru.png" alt="" />
               </picture>
-              <span>En</span>
-            </a>
-            <a
-              href="#"
-              class="flex gap-x-2 w-full items-center py-2 px-3 hover:bg-[#61DA10]"
+              <span> Рус </span>
+            </button>
+            <div
+              class="lang-dropdown absolute top-[50px] bg-[#61AE00] rounded-[5px] overflow-hidden w-[100px]"
             >
-              <picture>
-                <img src="img/uz.png" alt="" />
-              </picture>
-              <span>Uz</span>
-            </a>
+              <a
+                href="#"
+                class="flex gap-x-2 w-full items-center py-2 px-3 hover:bg-[#61DA10]"
+              >
+                <picture>
+                  <img class="min-w-[28px]" src="img/en.png" alt="" />
+                </picture>
+                <span>En</span>
+              </a>
+              <a
+                href="#"
+                class="flex gap-x-2 w-full items-center py-2 px-3 hover:bg-[#61DA10]"
+              >
+                <picture>
+                  <img class="min-w-[28px]" src="img/uz.png" alt="" />
+                </picture>
+                <span>Uz</span>
+              </a>
+            </div>
           </div>
         </div>
+        <div class="logo block sm:hidden">
+          <a href="#">
+            <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[140px]" src="img/logo.png" alt="logo" /></picture>
+          </a>
+        </div>
+        <button class="btn-open-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu-2"
+            width="40"
+            height="28"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="4" y1="6" x2="40" y2="6" />
+            <line x1="4" y1="12" x2="40" y2="12" />
+            <line x1="4" y1="18" x2="40" y2="18" />
+          </svg>
+        </button>
       </div>
-      <button class="btn-open-menu">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-menu-2"
-          width="40"
-          height="28"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#000000"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <line x1="4" y1="6" x2="40" y2="6" />
-          <line x1="4" y1="12" x2="40" y2="12" />
-          <line x1="4" y1="18" x2="40" y2="18" />
-        </svg>
-      </button>
     </nav>
   </div>
 
@@ -258,9 +272,9 @@
           Universe Group поможет вам на каждом этапе поступления в престижный ВУЗ!
           Спешите записаться на бесплатную консультацию
         </p>
-        <div class="home-btns z-10 relative font-semibold text-xl mt-7 relative flex gap-x-[30px] gap-y-7 flex-wrap justify-center sm:flex-nowrap sm:justify-start">
-  <a href="#" class="btn w-40">Позвонить</a>
-  <button class="btn w-40 modal-btn-open">Записаться</button>
+        <div class="home-btns z-10 relative font-semibold text-xl mt-7 relative flex gap-x-4 sm:gap-x-[30px] gap-y-5 justify-center sm:flex-nowrap sm:justify-start">
+  <a href="#" class="btn rounded-full sm:rounded-[9px] outline-1 outline outline-white outline-offset-4">Позвонить</a>
+  <button class="btn modal-btn-open rounded-full sm:rounded-[9px] outline-1 outline outline-white outline-offset-4">Записаться</button>
 </div>
       </div>
     </div>
@@ -268,7 +282,7 @@
 
   <section class="about-country relative top-[-70px] left-0 right-0 z-50">
     <div class="container mx-auto">
-      <div class="about-country-inner box-shadow px-2 sm:px-5 md:px-10 py-11 bg-white rounded-[12px]">
+      <div class="about-country-inner shadow-3xl px-2 sm:px-5 md:px-10 py-11 bg-white rounded-[12px]">
         <h2 class="title text-center mb-3">Франция</h2>
         <p class="text-[#6F6F6F] text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum aliquam et sed ipsum euismod fusce mauris
@@ -295,7 +309,7 @@
 
   <section class="university mb-10 sm:mb-[100px]">
     <div class="container mx-auto">
-      <div class="university-inner box-shadow sm:px-5 xl:px-[52px] rounded-[12px] pb-[70px]">
+      <div class="university-inner shadow-3xl sm:px-5 xl:px-[52px] rounded-[12px] pb-[70px]">
         <div class="title">
           Университеты
         </div>
@@ -512,37 +526,40 @@
 <section class="form relative">
   <div class="container mx-auto">
     <div class="form-inner py-[50px] md:py-[127px] relative z-10">
-      <h2 class="title text-white text-[32px] sm:text-[40px] md:text-[50px] mb-[32px]">Остались <span class="text-[#61AE00]">вопросы</span>, но нет ответов?</h2>
+      <h2 class="title text-white text-[32px] sm:text-[40px] md:text-[50px] mb-[32px]">Остались <span class="text-[#65B500]">вопросы</span>, но нет ответов?</h2>
       <form action=""
         class="grid grid-cols-12 sm:gap-x-3 items-center justify-between flex-wrap gap-y-4 xl:gap-y-0 px-5 sm:px-0">
         <input
-          class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-4 sm:py-5 px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
+          class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-3 sm:py-4 px-2 micro:px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
           type="text" name="name" placeholder="Имя">
         <input
-          class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-4 sm:py-5 px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
+          class="w-full col-span-12 sm:col-span-6 xl:col-span-5 py-3 sm:py-4 px-2 micro:px-6 text-black text-lg outline-0 rounded-[5px] bg-white opacity-70 backdrop-blur-lg"
           type="tel" name="phone" placeholder="Телефон" pattern="[0-9]+" title="Только цифры">
         <div class="mx-auto col-span-12 xl:col-span-2">
-          <button type="button" class="btn w-40 bg-white">
+          <button type="submit" class="btn w-40 bg-[#65B500] text-white">
             Записаться
-          </button>
+          </button> 
         </div>
       </form>
       <div class="text-[24px] md:text-[30px] font-bold text-white text-center mt-[20px]">
         Или свяжитесь с нами по номеру : <a href="tel:+998977263837"
           class="hover:text-[#70CB00] duration-100 delay-100 ease-in block md:inline-block">+99899
           999 99 99</a>
+          <div class="mt-5">
+            <a href="tel:+998977263837" class="rounded-[9px] bg-white text-[#65B500] btn">Позвонить</a>
+          </div>
       </div>
     </div>
   </div>
 </section>
 
 <footer class='footer'>
-  <div class='bg-[#61AE00] sm:bg-white'>
+  <div class='bg-[#65B500] sm:bg-white'>
     <div class='pt-12 pb-8 container mx-auto'>
 
-      <div class='footer-inner grid grid-cols-12 sm:gap-x-8 gap-y-8 xl:gap-x-12 md:gap-y-0'>
+      <div class='footer-inner grid grid-cols-12 sm:gap-x-4 gap-y-8 xl:gap-x-12 md:gap-y-0 px-0'>
         <div id='footer-map'
-              class='footer-map order-2 container mx-auto col-span-12 h-[400px] md:order-2 md:h-[560px] md:col-span-8 gap-x-[65px] rounded-[20px] overflow-hidden'>
+              class='footer-map order-2 container mx-auto col-span-12 h-[400px] md:order-2 md:h-[560px] md:col-span-8 gap-x-[65px] rounded-[20px]'>
         </div>
         <div class='footer-filial container mx-auto order-1 col-span-12 md:order-2 md:col-span-4 '>
           <h3 class='text-white sm:text-black text-center sm:text-left text-[24px] font-bold mb-4'>
@@ -555,7 +572,7 @@
                 data-workdays='<p>Пн-пт: 09:00-18:00</p>'
                 data-longitude='41.26465'
                 data-latitude='69.21627'
-                class='filial-item active text-white hover:text-[#61AE00] sm:text-black hover:bg-white cursor-pointer text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-2'
+                class='filial-item active text-white hover:text-[#61AE00] sm:text-black hover:bg-white cursor-pointer text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
             >
               Ташкент
             </li>
@@ -565,7 +582,7 @@
                 data-workdays='<p>Hell2112312312o world</p>'
                 data-longitude='39.65417'
                 data-latitude='66.95972'
-                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-2'
+                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
             >
               Самарканд
             </li>
@@ -575,7 +592,7 @@
                 data-workdays='<p>H123123213</p>'
                 data-longitude='40.11583'
                 data-latitude='67.84222'
-                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-2'
+                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
             >
               Жиззах
             </li>
@@ -585,7 +602,7 @@
                 data-workdays='<p>H123123213</p>'
                 data-longitude='40.08444'
                 data-latitude='65.37917'
-                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-2'
+                class='filial-item cursor-pointer text-white sm:text-black hover:text-[#61AE00] hover:bg-white text-[20px] font-semibold w-full rounded-xl border-2 border-white sm:border-[#65b500] sm:border py-2 px-0 micro:px-2'
                 >
                 Навоий
               </li>
@@ -669,7 +686,7 @@
 <script src='https://api-maps.yandex.ru/2.1/?apikey=67f1422c-1509-4e44-8c66-679678b04bf5&lang=ru_RU'
         type='text/javascript'></script>
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1643614236699'></script>
+<script src='js/main.js?t=1644223394405'></script>
 
 </body>
 
